@@ -1,0 +1,4 @@
+Bleu: #023266
+Rouge: #C1292E
+Beige : #FFF8F0
+gris-bleu : #EBEBEB

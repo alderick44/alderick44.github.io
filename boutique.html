@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <link rel="icon" href="favicon.ico" type="image/x-icon">
+      <link rel="stylesheet" href="style/style.css">
+      <!--Font Beba Neue-->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+      <!--Font Inter-->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+   </head>
+   <body>
+      <header>
+         <div class="wrapper over">
+            <div class="header-content">
+               <a href="index.html">
+               <img src="media-files/images/logo-transparent-0.2.png"  class="logo" alt="logo sporacultus">
+               </a> 
+
+               <h2 class="red-border">Site web en développement</h2>
+
+               <nav class="nav">
+                  <div class="utilitaire">
+                     <ul>
+                        <li><a href="a-propos.html" class="btn-small-nav">À propos</a></li>
+                        <li><a href="guides-et-conseils.html" class="btn-small-nav">Guides et conseils</a></li>
+                        <li><a href="nous-joindre.html" class="btn-small-nav">Nous joindre</a></li>
+                     </ul>
+                  </div>
+                  <ul>
+                     <li><a href="champignons.html" class="btn-nav">Nos champignons</a></li>
+                     <li><a href="boutique.html" class="btn-nav underline">Boutique</a></li>
+                     <li><a href="producteurs.html" class="btn-nav">Pour les producteurs</a></li>
+                  </ul>
+               </nav>
+            </div>
+         </div>
+      </header>
+      <main>
+         <section class="wrapper over">
+
+            <div class="section-flex-column-padding">
+                <div class="center">
+                    <h1>Promotions</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="section-flex-row">
+                    
+                    <div class="sub-section-flex">
+                            <!--Section avec 2 boutons-->
+                            <h1>Mycélium sur grain ("semence")</h1>
+                            <figure>
+                                <img src="media-files/images/produits/gsl-col.JPG" class="image-big" alt="bloc de production champignon">
+                            </figure>
+                        <div class="sub-section-flex">
+                            <h1>Titre description</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <a class="btn-not-available" href="boutique.html">L'acheter frais</a>
+                            <a class="btn" href="boutique.html">Acheter</a>
+                        </div>
+                    </div>
+                    <div class="sub-section-flex">
+                        <!--Section avec 1 bouton-->
+                        <h1>Grain Cuit Stérile</h1>
+                        <figure>
+                            <img src="media-files/images/produits/gspi-closeup.JPG" class="image-big" alt="grain stérile en sac avec port d'injection">
+                        </figure>
+                        <div class="sub-section-flex">
+                            <h1>Titre description</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            
+                           <a class="btn-invisible" href="boutique.html">L'acheter frais</a>
+                            <a class="btn" href="boutique.html">Acheter</a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+         </section>
+         <section class="wrapper over">
+            <div class="section-flex-column-padding">
+               <h1>Liste de prix</h1>
+               <div class="section-flex">
+                  <table id="Liste de prix">
+                     <tr>
+                        <th>Produits</th>
+                        <th>Note</th>
+                        <th>Prix</th>
+                     </tr>
+                     <tr>
+                        <th>Bloc de production</th>
+                        <th>Pleurote en huître</th>
+                        <th>15$</th>
+                     </tr>
+                     <tr>
+                        <th>Mycélium sur grain (semence)</th>
+                        <th>Pleurote en huître</th>
+                        <th>15$</th>
+                     </tr>
+                     </tr>
+                     <tr>
+                        <th>Produit2</th>
+                        <th>Pleurote en huître</th>
+                        <th>15$</th>
+                     </tr>
+                     </tr>
+                     <tr>
+                        <th>Produit3</th>
+                        <th>Pleurote en huître</th>
+                        <th>15$</th>
+                     </tr>
+                  </table>
+                  <table>
+                     <thead>
+                        <tr>
+                           <th>Nom du produit</th>
+                           <th>Produit1</td>
+                           <th>Produit2</td>
+                           <th>Produit3</td>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <th>Description</th>
+                           <td>Pleurote en huître</td>
+                           <td>King oyster</td>
+                           <td>Pleurote rose</td>
+                        </tr>
+                        <tr>
+                           <th>Prix</th>
+                           <td>15$</td>
+                           <td>25$</td>
+                           <td>30$</td>
+                        </tr>
+                     </tbody>
+                     <tfoot>
+                        <tr>
+                           <th>Lien pour achat</th>
+                           <td colspan="3"><a href="boutique.html" class="btn-table" >Achetez</a></td>
+                        </tr>
+                     </tfoot>
+                  </table>
+               </div>
+            </div>
+         </section>
+         <section class="wrapper over">
+            <!-- Tous nos produits section of the page-->
+            <div class="section-flex-column-padding">
+               <h1>Tous nos produits</h1>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+               <div class="section-flex">
+                  <div class="sub-section-flex">
+                     <h1>Produit1</h1>
+                     <figure>
+                        <a href="boutique.html">
+                        <img src="media-files/images/produits/bloc-production-pleurote.jpg" class="image-small" alt="bloc de production champignon">
+                        </a>
+                     </figure>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                     <a class="btn-not-available" href="boutique.html">L'acheter frais</a>
+                     <a class="btn" href="boutique.html">Acheter</a>
+                  </div>
+                  <div class="sub-section-flex">
+                     <h1>Produit2</h1>
+                     <figure>
+                        <a href="boutique.html">
+                        <img src="media-files/images/produits/gsl-col.JPG" class="image-small" alt="bloc de production champignon">
+                        </a>
+                     </figure>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                     <a class="btn-not-available" href="boutique.html">L'acheter frais</a>
+                     <a class="btn" href="boutique.html">Acheter</a>
+                  </div>
+                  <div class="sub-section-flex">
+                     <h1>Produit3</h1>
+                     <figure>
+                        <a href="boutique.html">
+                        <img src="media-files/images/produits/gspi-closeup.JPG" class="image-small" alt="bloc de production champignon">
+                        </a>
+                     </figure>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                     <a class="btn-not-available" href="boutique.html">L'acheter frais</a>
+                     <a class="btn" href="boutique.html">Acheter</a>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+      <footer>
+         <div class="wrapper footer-flex">
+            <p>Réalisé par Aldérick Gauthier</p>
+            <p>Dans le cadre de l'AEC en design et intégration Web - Cégep de Trois-Rivières</p>
+         </div>
+      </footer>
+   </body>
+</html>

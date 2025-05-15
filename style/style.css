@@ -1,0 +1,552 @@
+:root {
+
+	/* palette  de couleurs*/
+	--couleur-beige: #FFF8F0;
+	/*sert de blanc*/
+	--couleur-gris-bleu: #f5f5f5;
+	--couleur-blanc-bleu: #f9f9f9;
+	--couleur-gris-transparent: rgb(235, 235, 235, 0.8);
+
+	--couleur-bleu: #0456AF;
+	--couleur-noir: #1F0812;
+
+
+}
+
+
+header {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 200px;
+	position: fixed;
+	background-color: var(--couleur-beige);
+	overflow: hidden;
+	border: var(--couleur-bleu) solid 1px;
+
+	z-index: 10;
+	/*pour eviter que d'autres éléments soient en dessous. Ne pas enlever*/
+}
+
+footer {
+	background-color: var(--couleur-bleu);
+	color: aliceblue;
+	margin-bottom: 25px;
+
+	border-radius: 55px;
+}
+
+.footer-flex {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.wrapper {
+	width: 90%;
+	padding: 25px;
+	max-width: 1800px;
+	margin: 0 auto;
+	height: auto;
+
+	position: relative;
+
+}
+
+p {
+	text-align: center;
+
+}
+
+h1 {
+	font-size: 200%;
+	color: #1F0812;
+	font-family: "Bebas Neue";
+	font-weight: normal;
+
+	text-align: center;
+}
+
+
+
+h2 {
+	font-size: 150%;
+	color: #1F0812;
+	font-family: "Bebas Neue";
+	font-weight: normal;
+}
+
+
+h3{ /*attention h3 + gros que h2...*/
+	font-size: 350%;
+	color: #1F0812;
+	font-family: "Bebas Neue";
+	font-weight: normal;
+
+	text-align: center;
+}
+.over {
+	overflow: hidden;
+	margin-bottom: 25px;
+}
+
+.header-content {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+
+.spacer-banner {
+	/* espace pour la bannière de la page "Nos champignons" (espace au haut de la page qui pousse le contenu du site vers le bas) */
+	height: 950px;
+}
+
+
+.video-section {
+	height: 600px;
+	width: 1200px;
+	object-fit: cover;
+
+
+
+}
+
+.video-section-special {
+	height: 300px;
+	width: 300px;
+	object-fit: contain;
+}
+
+.video-landing {
+	height: auto;
+	width: 100%;
+	object-fit: fill;
+}
+
+.video-background {
+	object-fit: cover;
+	position: fixed;
+	top: 200px;
+	left: 0px;
+	height: auto;
+	min-width: 100%;
+	min-height: 100%;
+	z-index: -3;
+
+}
+
+
+.section-landing {
+	/*Revoir l'utilisatin de cette classe...ne se copie pas bien pour recrerr l'effet ailleur pt?? */
+	position: absolute;
+	width: 100%;
+	top: 200px;
+	left: 0px;
+	z-index: -1;
+
+	background-color: var(--couleur-gris-transparent);
+
+	padding-bottom: 3400px
+		/*Détermine la hauteur de la zone semi-transparente sous la vidéo de la page d'accueil (overlay de toute la page) ... background*/
+
+
+}
+
+.section-landing-champignons {
+	/*Revoir l'utilisatin de cette classe...ne se copie pas bien pour recrerr l'effet ailleur pt?? */
+	position: absolute;
+	width: 100%;
+	top: 200px;
+	left: 0px;
+	z-index: -1;
+
+	background-color: var(--couleur-gris-transparent);
+
+	padding-bottom: 2750px
+		/*Détermine la hauteur de la zone semi-transparente sous la vidéo de la page d'accueil (overlay de toute la page) ... background*/
+
+
+}
+
+.spacer-video {
+	/* espace pour le header video dans le landing (espace en haut de page entre les sections et la vidéo) */
+	height: 1400px;
+}
+
+.spacer-video2 {
+	/* espace pour la video de background (espace au bas de la page pour créer un espace vide) */
+	height: 600px;
+}
+
+
+
+.section-border-right {
+	border-right: 1px solid var(--couleur-noir);
+
+}
+
+.section-border-left {
+	border-left: 1px solid var(--couleur-noir);
+
+}
+
+
+nav li {
+	margin: 0 10px;
+	list-style: none;
+}
+
+.utilitaire {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+
+.utilitaire ul {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	position: relative;
+}
+
+.nav ul {
+	display: flex;
+	justify-content: center;
+}
+
+
+p {
+	font-family: "Inter";
+}
+
+main {
+	margin-top: 225px;
+	margin-bottom: 150px;
+}
+
+body {
+	background-color: var(--couleur-blanc-bleu);
+}
+
+section {
+	background-color: var(--couleur-gris-bleu);
+	box-shadow: 0px 0px 5px rgb(0, 0, 0);
+}
+
+
+.section-flex { 
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+
+	align-items: center;
+
+
+}
+
+.section-flex-column-padding {
+	display: flex;
+	flex-direction: column;
+	padding: 50px;
+}
+
+.section-flex-row {
+	display: flex;
+	flex-direction: row;
+}
+
+
+.sub-section-flex {
+	/*page nos champignons + boutique + */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	box-shadow: 0px 0px	10px #000000;
+
+	padding: 50px;
+
+}
+
+.sub-section-flex-row {
+	/*page boutique*/
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+	padding: 50px;
+
+}
+
+.section-flex-main {
+	display: flex;
+	justify-content: space-between;
+
+}
+
+
+.title {
+	font-size: 200%;
+	color: #1F0812;
+	font-family: "Bebas Neue";
+	font-weight: normal;
+
+}
+
+
+.title-landing {
+	position: absolute;
+	text-align: left;
+	font-family: "Bebas Neue", sans-serif;
+	font-size: 425%;
+	text-shadow:
+		0 0 5px #000000,
+		0 0 10px #000000,
+		0 0 25px #000000;
+	/* text-shadow:
+            0 0 5px #0456AF,
+            0 0 10px #0456AF,
+            0 0 20px #0456AF,
+            0 0 40px #0456AF,
+            0 0 80px #0456AF;
+        */
+
+	top: 100px;
+	left: 5%;
+	color: #EBEBEB;
+}
+
+.center {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+
+}
+
+.center-self {
+	align-self: center;
+}
+
+table {
+
+	border: 2px solid var(--couleur-noir);
+	border-collapse: collapse;
+	/* les éléments de la table se collent ensemble */
+	background-color: var(--couleur-gris-bleu);
+	color: white;
+
+
+}
+
+
+
+td,
+th {
+	padding: 10px;
+	border: 2px solid var(--couleur-noir);
+	text-align: center;
+}
+
+th {
+	background-color: var(--couleur-bleu);
+
+}
+
+
+tbody td {
+	color: var(--couleur-noir);
+}
+
+
+tfoot td {
+	padding: 25px;
+}
+
+
+.btn-table {
+	font-size: 150%;
+	text-decoration: none;
+	/*border:solid 1px #0e0e0f;*/
+	color: #FFF8F0;
+	background-color: #0456AF;
+	padding: 15px;
+	width: fit-content;
+
+	border-radius: 20px;
+}
+
+
+.btn {
+	font-size: 150%;
+	text-decoration: none;
+	/*border:solid 1px #0e0e0f;*/
+	margin: 1.5px;
+	color: #FFF8F0;
+	background-color: #0456AF;
+	padding: 15px;
+	width: fit-content;
+
+	border-radius: 20px;
+
+}
+
+.btn-not-available {
+	font-size: 150%;
+	text-decoration: none;
+	border: solid 1px var(--couleur-noir);
+	margin: 1.5px;
+	color: #0456AF;
+	background-color: var(--couleur-beige);
+	padding: 15px;
+	width: fit-content;
+
+	border-radius: 20px;
+
+}
+
+.btn-invisible {
+
+	z-index: -10; /*rend le bouton invisible et inclicable mais il continue d'occuper l'espace (spacer de la même grosseur que le bouton original */
+
+	font-size: 150%;
+	text-decoration: none;
+	border: solid 1px var(--couleur-noir);
+	margin: 1.5px;
+	color: #0456AF;
+	background-color: var(--couleur-beige);
+	padding: 15px;
+	width: fit-content;
+
+
+	border-radius: 20px;
+}
+
+.btn-nav {
+	font-size: 150%;
+	text-decoration: none;
+	border: solid 1px #023266;
+	color: #1F0812;
+	margin: 1.5px;
+	padding: 15px;
+
+	border-radius: 20px;
+}
+
+.btn-small {
+	font-size: 100%;
+	text-decoration: none;
+	border: solid 1px #1d1d1e;
+	margin: 1.5px;
+	color: #FFF8F0;
+	background-color: #0456AF;
+	padding: 10px;
+}
+
+.btn-small-nav {
+	font-size: 100%;
+	text-decoration: none;
+	margin: 1.5px;
+	color: #1F0812;
+	padding: 10px;
+}
+
+
+/*Effets de survol*/
+
+.btn:hover {
+	color: #C1292E;
+}
+
+.btn-small:hover {
+	color: #C1292E;
+}
+
+.btn-nav:hover {
+	color: #C1292E;
+	text-decoration: underline #023266;
+}
+
+.btn-small-nav:hover {
+	color: #C1292E;
+	text-decoration: underline #023266;
+}
+
+.btn-not-available:hover {
+	color: var(--couleur-beige);
+	background-color: var(--couleur-gris-transparent);
+}
+
+.btn-table:hover {
+	color: #C1292E;
+	text-decoration: underline #023266;
+}
+
+
+.underline {
+	text-decoration: underline #023266;
+}
+
+.logo {
+	height: 150px;
+}
+
+.logo:hover {
+	transform: scale(1.10);
+}
+
+.image-banner {
+	width: 100%;
+	object-fit: cover;
+	max-width: 3000px;
+}
+
+.image-small {
+	height: 250px;
+}
+
+.image-medium {
+	height: 400px
+}
+
+.image-big {
+	width: 600px;
+}
+
+.image-champignons{
+	height: 400px;
+	width: 513px;
+
+}
+
+.image-aspect {
+
+	max-width: 90%;
+    height: auto;
+    aspect-ratio: 4928 / 3264;
+    object-fit: cover;
+    
+}
+
+figure {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.rouge {
+	color: #C1292E;
+
+}
+
+.red-border {
+	color: #C1292E;
+	padding:12px;
+	border: solid 1px #1d1d1e;
+
+}
+
+.bleu {
+	color: #0456AF;
+}
