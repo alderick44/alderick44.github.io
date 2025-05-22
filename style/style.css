@@ -584,9 +584,6 @@ figure {
 @media screen and (max-width: 1280px)
 {
 
-	section {
-	background-color: red;
-	}
 
 	.btn-nav {
 	font-size: 125%;
@@ -647,7 +644,6 @@ figure {
 	}
 
 	section {
-		background-color:rgb(152, 50, 161);
 		max-width: 90%;
 	}
 
