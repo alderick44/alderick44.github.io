@@ -42,6 +42,108 @@ footer {
 	justify-content: space-between;
 }
 
+.row-2-responsive{
+	grid-row: 1; /*2 in queries*/
+}
+
+.grid-sub-section{
+
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 15% 426px 10% 10%;
+
+	align-items: center;
+	justify-items: center;
+
+	box-shadow: 0px 0px	20px #00000070;
+
+	padding: 50px;
+	
+
+}
+
+.grid-section{
+
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+
+	align-items: center;
+	justify-items: center;
+
+}
+
+.grid-footer{
+	display: grid;
+	grid-template-columns:1fr 2fr 3fr;
+	grid-template-rows: 1fr;
+
+	align-items: center;
+	justify-content: space-between;
+}
+
+
+.grid-utilitaire {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+	justify-content: end;
+}
+
+
+.grid-nav{
+	display: grid;
+	grid-template-rows: 1fr;
+
+}
+
+.grid-nav ul {
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	grid-template-rows: 1fr;
+	justify-content: end;
+	align-items: center;
+
+	
+}
+
+.grid-header-content {
+	display: grid;
+
+	grid-template-columns: 191px auto auto;
+	grid-template-rows: 1fr;
+
+	align-items: center;
+
+	row-gap: 10px;
+
+	
+}
+
+.grid-column-responsive {
+		grid-column: 3; /*Devient 2 dans les queries*/
+	}
+
+.grid-responsive {
+	display: grid;
+	grid-template-columns: 250px 700px;
+	grid-template-rows: 1fr;
+	
+	justify-content: end;
+
+
+}
+
+.grid-responsive-704 ul{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-template-rows: 1fr;
+
+}
+
+
+
+
 .wrapper {
 	width: 90%;
 	padding: 25px;
@@ -108,8 +210,6 @@ h3{ /*attention h3 + gros que h2...*/
 	width: 1200px;
 	object-fit: cover;
 
-
-
 }
 
 .video-section-special {
@@ -120,8 +220,15 @@ h3{ /*attention h3 + gros que h2...*/
 
 .video-landing {
 	height: auto;
-	width: 100%;
+	width: 95%;
 	object-fit: fill;
+}
+
+.flexbox-video-landing{
+	display: flex;
+	justify-content: center;
+
+	background: #1b1b1b;
 }
 
 .video-background {
@@ -138,6 +245,7 @@ h3{ /*attention h3 + gros que h2...*/
 
 
 .section-landing {
+	
 	/*Revoir l'utilisatin de cette classe...ne se copie pas bien pour recrerr l'effet ailleur pt?? */
 	position: absolute;
 	width: 100%;
@@ -163,11 +271,13 @@ h3{ /*attention h3 + gros que h2...*/
 
 	background-color: var(--couleur-gris-transparent);
 
-	padding-bottom: 2750px
+	padding-bottom: 3350px;
 		/*Détermine la hauteur de la zone semi-transparente sous la vidéo de la page d'accueil (overlay de toute la page) ... background*/
 
 
 }
+
+
 
 .spacer-video {
 	/* espace pour le header video dans le landing (espace en haut de page entre les sections et la vidéo) */
@@ -176,10 +286,13 @@ h3{ /*attention h3 + gros que h2...*/
 
 .spacer-video2 {
 	/* espace pour la video de background (espace au bas de la page pour créer un espace vide) */
-	height: 600px;
+	height: 500px;
 }
 
-
+.image-xl {
+	width: auto;
+	height: 650px;
+}
 
 .section-border-right {
 	border-right: 1px solid var(--couleur-noir);
@@ -245,6 +358,8 @@ section {
 
 }
 
+
+
 .section-flex-column-padding {
 	display: flex;
 	flex-direction: column;
@@ -290,10 +405,13 @@ section {
 	flex-direction: row;
 }
 
+
 .flex-responsive-704{
 	display: flex;
 	flex-direction: row;
+	justify-content: center;
 }
+
 
 .responsive-margin{
 	margin-top: 40px;
@@ -352,6 +470,11 @@ table {
 	color: white;
 
 
+}
+
+.iframe {
+	width: 600px;
+	height: 450px;
 }
 
 
@@ -524,6 +647,8 @@ tfoot td {
 	width: 100%;
 	object-fit: cover;
 	max-width: 3000px;
+
+	top: -50px;
 }
 
 .image-small {
@@ -544,6 +669,7 @@ tfoot td {
 
 }
 
+/*
 .image-aspect {
 
 	max-width: 90%;
@@ -552,6 +678,7 @@ tfoot td {
     object-fit: cover;
     
 }
+*/
 
 figure {
 	display: flex;
@@ -585,11 +712,39 @@ figure {
 {
 
 
+
+
+	header{
+		height: 150px;
+	}
+
+	.spacer-video {
+	/* espace pour le header video dans le landing (espace en haut de page entre les sections et la vidéo) */
+	height: 820px;
+ 	}
+
+	.spacer-banner {
+	/* espace pour la bannière de la page "Nos champignons" (espace au haut de la page qui pousse le contenu du site vers le bas) */
+	height: 700px;
+	}
+
+	.title-landing {
+		position: absolute;
+		text-align: left;
+		font-size: 300%;
+
+	}
+
+	.wrapper{
+		padding-top:10px;
+	}
+
+
 	.btn-nav {
-	font-size: 125%;
-	margin: 0.5px;
-	padding: 10px;
-	border-radius: 15px;
+		font-size: 125%;
+		margin: 0.5px;
+		padding: 10px;
+		border-radius: 15px;
 	}
 
 	.btn-small-nav{
@@ -597,9 +752,9 @@ figure {
 	}
 
 	.flex-responsive{
-	display: flex;
-	flex-direction: column-reverse;
-	align-items: center;
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
 	}
 
 	.logo{
@@ -616,6 +771,149 @@ figure {
 		justify-content: center;
 	}
 
+	.grid-header-content {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 200px;
+		
+		align-items: center;
+
+
+		margin-top: 0px;
+
+
+	}
+
+
+	.responsive-margin{
+		margin-top: 10px;
+	}
+
+	header .red-border{
+		font-size: 90%;
+		padding: 5px;
+	}
+
+
+
+	.grid-responsive {
+		display: grid;
+		grid-template-columns: 663px;
+		grid-template-rows: 1fr;
+
+		justify-items: center;
+
+	}
+
+	.grid-responsive2{
+		display: grid;
+		flex-direction: column;
+	}
+
+ 	.grid-column-responsive {
+		grid-column: 2;
+	}
+
+	.row-2-responsive{
+		grid-row: 2;
+	}
+
+
+	.image-medium {
+		width:auto;
+		height:250px;
+	}
+
+	.image-champignons{
+		height: 250px;
+		width: 321px;
+
+	}
+
+	.image-big{
+		scale: 0.75;
+
+	}
+
+	.section-flex-row{
+		flex-direction: column;
+	}
+
+	.section-landing {
+		position: absolute;
+		width: 100%;
+		top: 150px;
+		left: 0px;
+		z-index: -1;
+
+		background-color: var(--couleur-gris-transparent);
+
+		padding-bottom: 3550px
+		/*Détermine la hauteur de la zone semi-transparente sous la vidéo de la page d'accueil (overlay de toute la page) ... background*/
+
+
+	}
+
+
+	.section-landing-champignons {
+		position: absolute;
+		width: 100%;
+		top: 200px;
+		left: 0px;
+		z-index: -1;
+
+		background-color: var(--couleur-gris-transparent);
+
+		padding-bottom: 3450px
+			/*Détermine la hauteur de la zone semi-transparente sous la vidéo de la page d'accueil (overlay de toute la page) ... background*/
+
+
+	}
+
+	.grid-sub-section{
+
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 15% 426px 10% 10%;
+
+	align-items: center;
+	justify-items: center;
+
+	box-shadow: 0px 0px	20px #00000070;
+
+	padding: 20px;
+	
+
+	}
+
+	p{
+		font-size: 14px;
+		padding-top: 10px;
+		padding-bottom: 50px;
+	}
+
+	.image-xl {
+		width: auto;
+		height: 250px;
+	}
+
+	.image-big {
+		width: auto;
+		height: 350px;
+	}
+
+	.section-flex{
+		flex-direction: column;
+	}
+
+	.video-section {
+	height: 300px;
+	width: auto;
+	object-fit: cover;
+
+	}
+
+
 
 
 
@@ -624,10 +922,72 @@ figure {
 @media screen and (max-width: 768px) 
 {
 
+	.video-background {
+		object-fit: cover;
+		position: fixed;
+		top: 100px;
+		left: -370px;
+		height: auto;
+		min-width: 100%;
+		min-height: 100%;
+		z-index: -3;
+
+		scale: 75%;
+
+	}
+
+	.video-landing {
+		height: auto;
+		width: 100%;
+		object-fit: fill;
+
+		position: relative;
+		top: 50px;
+	}
+
+
+
+	.title-landing {
+	position: absolute;
+	text-align: left;
+	font-size: 150%;
+
+	}
+
+	.sub-title-landing {
+		margin-top: 75px;
+	}
+
+	.spacer-video2 {
+	/* espace pour la video de background (espace au bas de la page pour créer un espace vide) */
+	height: 625px;
+	}
+
+	.spacer-video {
+	/* espace pour le header video dans le landing (espace en haut de page entre les sections et la vidéo) */
+	height: 500px;
+ 	}
+
+	.spacer-banner {
+	/* espace pour la bannière de la page "Nos champignons" (espace au haut de la page qui pousse le contenu du site vers le bas) */
+	height: 500px;
+	}
+
+	.wrapper {
+	width: 85%;
+	padding: 10px;
+	max-width: 1800px;
+	margin-bottom: 10 auto;
+	height: auto;
+
+	position: relative;
+
+	}
+
 	.btn-nav {
-		font-size: 100%;
+		font-size: 14px;
 		margin-top: 20.5px;
-		padding: 5px;
+		padding: 2.5px;
 		border-radius: 5px;
 	}
 
@@ -638,14 +998,21 @@ figure {
 		border-radius: 5px;
 	}
 
-	header .red-border{
-		font-size: 100%;
-		padding: 5px;
+	h1{
+		font-size: 24px;
 	}
 
-	section {
-		max-width: 90%;
+	h2{
+		font-size: 20px;
 	}
+
+	.section-flex-column-padding {
+		display: flex;
+		flex-direction: column;
+		padding: 0px;
+	}
+
+
 
 	.flex-responsive-704{
 		flex-direction: column;
@@ -655,12 +1022,130 @@ figure {
 		margin-bottom: 15px;
 	}
 
+	.iframe{
+		width: 400px;
+		height: 250;
+	}
+
 	header{
-		height: 250px;
+		height: 200px;
 	}
 
 	.responsive-margin{
 		margin-top: 15px;
 	}
+
+	.section-landing {
+	position: absolute;
+	width: 100%;
+	top: 150px;
+	left: 0px;
+	z-index: -1;
+
+	background-color: var(--couleur-gris-transparent);
+
+	padding-bottom: 3150px
+	/*Détermine la hauteur de la zone semi-transparente sous la vidéo de la page d'accueil (overlay de toute la page) ... background*/
+
+
+	}
+
+	
+	.section-landing-champignons {
+		position: absolute;
+		width: 100%;
+		top: 200px;
+		left: 0px;
+		z-index: -1;
+
+		background-color: var(--couleur-gris-transparent);
+
+		padding-bottom: 5100px
+			/*Détermine la hauteur de la zone semi-transparente sous la bannière de la page champignon (overlay de toute la page) ... background*/
+
+
+	}
+
+	footer p{
+
+		scale: 70%;
+
+	}
+
+	footer {
+	background-color: var(--couleur-bleu);
+	color: aliceblue;
+	margin-bottom: 15px;
+
+	border-radius: 45px;
+	}
+
+	/*Pour modifier le message du site (annonce site web en développement)  */
+	.responsive-margin{
+		margin-top: -24px;
+	}
+
+	header .red-border{
+		font-size: 80%;
+		padding: 5px;
+	}
+
+	.grid-responsive-704 ul{
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+		gap: 15px;
+
+	}
+
+	.grid-responsive {
+	display: grid;
+	grid-template-columns: 420px;
+	grid-template-rows: 1fr;
+
+	justify-items: center;
+
+	}
+
+	.grid-sub-section{
+
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 15% 426px 10% 10%;
+
+	align-items: center;
+	justify-items: center;
+
+	box-shadow: 0px 0px	20px #00000070;
+
+	padding: 20px;
+	
+
+	}
+
+	.grid-section{
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr;
+	}
+
+	.image-xl {
+	width: auto;
+	height: 150px;
+	}
+
+	.image-big {
+		width: auto;
+		height: 250px;
+	}
+
+	.video-section {
+		height: 200px;
+		width: auto;
+		object-fit: cover;
+
+	}
+
+
+
 
 }
