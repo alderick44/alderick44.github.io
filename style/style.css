@@ -473,6 +473,13 @@ section {
 
 }
 
+.center-grid {
+	display: grid;
+	justify-items: center;
+	
+
+}
+
 .center-self {
 	align-self: center;
 }
@@ -821,8 +828,8 @@ figure {
 		flex-direction: column;
 	}
 
- 	.grid-column-responsive {
-		grid-column: 2;
+ 	.grid-column-responsive { /*pour n'avoir qu'une seule colonne centré*/
+		grid-column: 1;
 	}
 
 	.row-2-responsive{
