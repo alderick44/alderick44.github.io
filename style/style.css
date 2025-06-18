@@ -364,6 +364,8 @@ section {
 }
 
 
+
+
 .section-flex { 
 	display: flex;
 	flex-direction: row;
@@ -393,8 +395,8 @@ section {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-
 	box-shadow: 0px 0px	10px #000000;
+
 
 	padding: 50px;
 
@@ -499,6 +501,25 @@ table {
 	width: 600px;
 	height: 450px;
 }
+
+
+
+input:not([type=radio]) {
+  width: 100%;
+  background-color: #aacff445;
+}
+
+input[type=radio] {
+	margin: 10px;
+}
+
+textarea {
+  width: 95%;
+  background-color: #aacff445;
+}
+
+
+
 
 
 
@@ -670,8 +691,6 @@ tfoot td {
 	width: 100%;
 	object-fit: cover;
 	max-width: 3000px;
-
-	top: -50px;
 }
 
 .image-small {
@@ -726,8 +745,29 @@ figure {
 	color: #0456AF;
 }
 
+.border-shadow-remove{
+	box-shadow: 0px 0px	0px #ffffff;
+}
 
+@media screen and (max-width: 1459px)
+{
+	.grid-sub-section{
 
+	display: grid;
+	grid-template-columns: 500px;
+	grid-template-rows: 15% 426px 10% 10%;
+
+	align-items: center;
+	justify-items: center;
+
+	box-shadow: 0px 0px	20px #00000070;
+
+	padding: 20px;
+	
+
+	}
+
+}
 
 
 
@@ -931,13 +971,57 @@ figure {
 
 	}
 
+	.image-banner {
+	width: 100%;
+	object-fit: cover;
+	max-width: 3000px;
+
+	position: absolute;
+	top: -50px;
+
+	}
+
 
 
 
 
 }
 
-@media screen and (max-width: 768px) 
+
+
+	@media screen and (max-width: 969px)
+	{
+
+	.grid-section{
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr;
+	}
+
+	/*
+	.image-medium {
+		scale: 0.75;
+	}
+
+	.image-champignons{
+		scale: 0.75;
+	}
+
+	.image-big{
+		scale: 0.75;
+
+	}
+
+	p{
+		font-size: 14px;
+	}
+	*/
+
+	}
+
+
+
+
+@media screen and (max-width: 768px)
 {
 
 	.video-background {
@@ -962,7 +1046,14 @@ figure {
 		position: relative;
 		top: 50px;
 	}
+	
+	.sub-section-flex {
+		/*page nos champignons + boutique + ?*/
 
+
+		padding: 25px;
+
+	}
 
 
 	.title-landing {
@@ -992,7 +1083,7 @@ figure {
 	}
 
 	.wrapper {
-	width: 85%;
+	width: 95%;
 	padding: 10px;
 	max-width: 1800px;
 	margin-bottom: 10 auto;
@@ -1029,6 +1120,11 @@ figure {
 		flex-direction: column;
 		padding: 0px;
 	}
+
+
+
+
+	
 
 
 
@@ -1161,9 +1257,97 @@ figure {
 		height: 200px;
 		width: auto;
 		object-fit: cover;
+	}
+
+	.image-banner {
+	width: 100%;
+	object-fit: cover;
+	max-width: 3000px;
+
+	position: absolute;
+	top: 0px
+	}
+}
+
+
+@media screen and (max-width: 512px)
+{
+
+	.wrapper {
+	width: 98%;
+	padding: 10px;
+	max-width: 1800px;
+	margin-bottom: 10 auto;
+	height: auto;
+
+	position: relative;
 
 	}
 
+	.grid-sub-section{
+		display: grid;
+		grid-template-columns: 250px;
+		grid-template-rows: 15% 400px 10% 10%;
+
+		align-items: center;
+		justify-items: center;
+
+		box-shadow: 0px 0px	20px #00000070;
+
+		padding: 10px;
+
+	}
+
+	form{
+		width: 48%;
+	}
+
+	input[type=radio] {
+	margin: 2px;
+	}
+
+	.image-medium {
+		scale: 0.5;
+	}
+
+	.image-champignons{
+		scale: 0.5;
+	}
+
+	.image-big{
+		scale: 0.5;
+
+	}
+
+	.iframe{
+		scale: 0.65;
+	}
+
+	.btn{
+		scale: 0.75;
+	}
+
+	.btn-not-available{
+		scale: 0.75;
+	}
+
+
+	h1{
+		scale: 0.75;
+	}
+
+	p{
+		font-size: 12px;
+		white-space: normal;
+		word-wrap: break-word;
+		overflow-wrap: break-word;
+
+		
+	}
+
+	input[type=radio] {
+	margin: 5px;
+	}
 
 
 
