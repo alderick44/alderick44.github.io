@@ -478,6 +478,7 @@ section {
 .center-grid {
 	display: grid;
 	justify-items: center;
+	justify-content: center;
 	
 
 }
@@ -975,9 +976,10 @@ figure {
 	width: 100%;
 	object-fit: cover;
 	max-width: 3000px;
-
-	position: absolute;
+	position: relative;
 	top: -50px;
+
+
 
 	}
 
@@ -1264,8 +1266,8 @@ figure {
 	object-fit: cover;
 	max-width: 3000px;
 
-	position: absolute;
-	top: 0px
+	position: relative;
+	top: 0px;
 	}
 }
 
@@ -1274,8 +1276,8 @@ figure {
 {
 
 	.wrapper {
-	width: 98%;
-	padding: 10px;
+	width: 100%;
+	padding: 1px;
 	max-width: 1800px;
 	margin-bottom: 10 auto;
 	height: auto;
@@ -1294,7 +1296,15 @@ figure {
 
 		box-shadow: 0px 0px	20px #00000070;
 
-		padding: 10px;
+		padding: 5px;
+
+	}
+
+	.sub-section-flex {
+		/*page nos champignons + boutique + ?*/
+
+
+		padding: 5px;
 
 	}
 
