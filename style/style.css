@@ -535,6 +535,8 @@ section {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
+	
+
 
 }
 
@@ -627,7 +629,7 @@ tfoot td {
 	font-size: 150%;
 	text-decoration: none;
 	/*border:solid 1px #0e0e0f;*/
-	margin: 1.5px;
+	margin: 20px;
 	color: #FFF8F0;
 	background-color: #0456AF;
 	padding: 15px;
@@ -1087,6 +1089,15 @@ figure {
 		padding: 25px;
 		
 	}
+
+.section-border-right {
+	border-right: 1px solid var(--couleur-blanc-bleu);
+}
+
+.section-border-left {
+	border-left: 1px solid var(--couleur-blanc-bleu);
+
+}
 
 
 
