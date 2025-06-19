@@ -774,6 +774,9 @@ tfoot td {
 	height: 400px;
 	width: 513px;
 
+	object-fit: contain;
+	
+
 }
 
 /*
