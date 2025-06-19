@@ -741,10 +741,19 @@ tfoot td {
 .logo {
 	height: 150px;
 }
+.logo-border{
+	border-bottom: solid 1px var(--couleur-bleu)
+}
 
 .logo-responsive{
 	height: 50px;
 	display:none;
+	padding: 2.5px;
+
+}
+
+.logo-responsive-border{
+	border-bottom: solid 1px var(--couleur-bleu)
 }
 
 .logo:hover {
@@ -913,6 +922,11 @@ figure {
 
 	.logo-responsive{
 		display: block;
+	}
+
+	.logo-responsive-border{
+		display: block;
+		border-bottom: solid 1px var(--couleur-bleu)
 	}
 
 	.header-content{
