@@ -42,6 +42,25 @@ footer {
 	justify-content: space-between;
 }
 
+.footer-flex p {
+	padding: 10px;
+}
+
+.grid-footer p {
+	padding: 10px;
+}
+
+
+
+.padding{
+	padding: 20px;
+}
+
+
+
+
+
+
 .row-2-responsive{
 	grid-row: 1; /*2 in queries*/
 }
@@ -49,7 +68,7 @@ footer {
 .grid-sub-section{
 
 	display: grid;
-	grid-template-columns: 1fr;
+	grid-template-columns: 30rem;
 	grid-template-rows: 15% 426px 10% 10%;
 
 	align-items: center;
@@ -65,8 +84,8 @@ footer {
 .grid-section{
 
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr;
+	grid-template-columns: 40rem 40rem;
+	grid-template-rows: 50rem;
 
 	align-items: center;
 	justify-items: center;
@@ -267,7 +286,7 @@ h3{ /*attention h3 + gros que h2...*/
 
 	background-color: var(--couleur-gris-transparent);
 
-	padding-bottom: 3350px;
+	padding-bottom: 3150px;
 		/*Détermine la hauteur de la zone semi-transparente sous la vidéo de la page d'accueil (overlay de toute la page) ... background*/
 
 
@@ -382,11 +401,14 @@ section {
 	display: flex;
 	flex-direction: column;
 	padding: 50px;
+
+	align-items: center;
 }
 
 .section-flex-row {
 	display: flex;
 	flex-direction: row;
+	justify-content: center;
 }
 
 
@@ -397,6 +419,46 @@ section {
 	align-items: center;
 	box-shadow: 0px 0px	10px #000000;
 
+	width: 35rem;
+	height: 53rem;
+
+
+	padding: 10px;
+
+}
+
+.sub-section-flex h1,p{
+
+	padding: 1px;
+	margin: 1px;
+
+}
+
+.sub-section-flex-a-propos {
+	/*page nos champignons + boutique + */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	box-shadow: 0px 0px	10px #000000;
+
+	width: 35rem;
+	height: 15rem;
+
+
+	padding: 10px;
+
+}
+
+
+.sub-section-flex-triple {
+	/*page nos champignons + boutique + */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	box-shadow: 0px 0px	10px #000000;
+
+	width: 20rem;
+	height: 40rem;
 
 	padding: 50px;
 
@@ -487,16 +549,7 @@ section {
 	align-self: center;
 }
 
-table {
 
-	border: 2px solid var(--couleur-noir);
-	border-collapse: collapse;
-	/* les éléments de la table se collent ensemble */
-	background-color: var(--couleur-gris-bleu);
-	color: white;
-
-
-}
 
 .iframe {
 	width: 600px;
@@ -520,19 +573,28 @@ textarea {
 }
 
 
+table {
+
+	border: 2px solid var(--couleur-noir);
+	border-collapse: collapse;
+	/* les éléments de la table se collent ensemble */
+	background-color: var(--couleur-gris-bleu);
+	color: white;
+
+	color: #000000;
+
+}
 
 
 
-
-td,
-th {
+td,th {
 	padding: 10px;
 	border: 2px solid var(--couleur-noir);
 	text-align: center;
 }
 
 th {
-	background-color: var(--couleur-bleu);
+	background-color: var(--couleur-gris-bleu);
 
 }
 
@@ -573,6 +635,8 @@ tfoot td {
 	border-radius: 20px;
 
 }
+
+
 
 .btn-not-available {
 	font-size: 150%;
@@ -703,7 +767,7 @@ tfoot td {
 }
 
 .image-big {
-	width: 600px;
+	width: 425px;
 }
 
 .image-champignons{
@@ -752,6 +816,7 @@ figure {
 
 @media screen and (max-width: 1459px)
 {
+
 	.grid-sub-section{
 
 	display: grid;
@@ -764,7 +829,7 @@ figure {
 	box-shadow: 0px 0px	20px #00000070;
 
 	padding: 20px;
-	
+
 
 	}
 
@@ -796,6 +861,8 @@ figure {
 		position: absolute;
 		text-align: left;
 		font-size: 300%;
+
+		top: 30px;
 
 	}
 
@@ -896,6 +963,8 @@ figure {
 
 	.section-flex-row{
 		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 	}
 
 	.section-landing {
@@ -923,7 +992,7 @@ figure {
 
 		background-color: var(--couleur-gris-transparent);
 
-		padding-bottom: 3450px
+		padding-bottom: 3050px
 			/*Détermine la hauteur de la zone semi-transparente sous la vidéo de la page d'accueil (overlay de toute la page) ... background*/
 
 
@@ -932,7 +1001,7 @@ figure {
 	.grid-sub-section{
 
 	display: grid;
-	grid-template-columns: 1fr;
+	grid-template-columns: 22rem;
 	grid-template-rows: 15% 426px 10% 10%;
 
 	align-items: center;
@@ -942,6 +1011,18 @@ figure {
 
 	padding: 20px;
 	
+
+	}
+
+	.grid-section{
+		grid-template-columns: 30rem 30rem;
+		grid-template-rows: 1fr;
+	}
+
+	.sub-section-flex-triple {
+	width: 35rem;
+	height: 40rem;
+	padding: 2px;
 
 	}
 
@@ -983,6 +1064,11 @@ figure {
 
 	}
 
+	.section-flex-column-padding {
+		padding: 25px;
+		
+	}
+
 
 
 
@@ -997,6 +1083,22 @@ figure {
 	.grid-section{
 		grid-template-columns: 1fr;
 		grid-template-rows: 1fr 1fr;
+	}
+
+
+	.section-landing-champignons {
+		position: absolute;
+		width: 100%;
+		top: 200px;
+		left: 0px;
+		z-index: -1;
+
+		background-color: var(--couleur-gris-transparent);
+
+		padding-bottom: 5250px
+			/*Détermine la hauteur de la zone semi-transparente sous la bannière de la page champignon (overlay de toute la page) ... background*/
+
+
 	}
 
 	/*
@@ -1052,8 +1154,16 @@ figure {
 	.sub-section-flex {
 		/*page nos champignons + boutique + ?*/
 
+		
+		padding: 1px;
 
-		padding: 25px;
+	}
+
+	.sub-section-flex-a-propos {
+
+	width: 19rem;
+	height: 15rem;
+
 
 	}
 
@@ -1061,7 +1171,9 @@ figure {
 	.title-landing {
 	position: absolute;
 	text-align: left;
-	font-size: 150%;
+	font-size: 200%;
+
+	top: 80px;
 
 	}
 
@@ -1076,7 +1188,7 @@ figure {
 
 	.spacer-video {
 	/* espace pour le header video dans le landing (espace en haut de page entre les sections et la vidéo) */
-	height: 500px;
+	height: 520px;
  	}
 
 	.spacer-banner {
@@ -1121,14 +1233,28 @@ figure {
 		display: flex;
 		flex-direction: column;
 		padding: 0px;
+		
 	}
 
+	.sub-section-flex {
+	/*page nos champignons + boutique + */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 
+	width: 33rem;
+	height: 45rem;
 
+	padding: 1px;
 
-	
+	}
 
+	.sub-section-flex-triple {
+	width: 27rem;
+	height: 40rem;
+	padding: 2px;
 
+	}
 
 	.flex-responsive-704{
 		flex-direction: column;
@@ -1147,9 +1273,6 @@ figure {
 		height: 200px;
 	}
 
-	.responsive-margin{
-		margin-top: 15px;
-	}
 
 	.section-landing {
 	position: absolute;
@@ -1198,12 +1321,19 @@ figure {
 
 	/*Pour modifier le message du site (annonce site web en développement)  */
 	.responsive-margin{
-		margin-top: -24px;
+		margin-top: -12px;
 	}
 
 	header .red-border{
 		font-size: 80%;
 		padding: 5px;
+	}
+
+	table {
+
+	scale: 0.7;
+
+
 	}
 
 	.grid-responsive-704 ul{
@@ -1241,7 +1371,7 @@ figure {
 	}
 
 	.grid-section{
-		grid-template-columns: 1fr;
+		grid-template-columns: 20rem;
 		grid-template-rows: 1fr 1fr;
 	}
 
@@ -1286,10 +1416,23 @@ figure {
 
 	}
 
+	.sub-section-flex-triple {
+	width: 20rem;
+	height: 40rem;
+	padding: 2px;
+
+	}
+
+	/*Pour modifier le message du site (annonce site web en développement)  */
+	.responsive-margin{
+		margin-top: -5px;
+	}
+
+
 	.grid-sub-section{
 		display: grid;
-		grid-template-columns: 250px;
-		grid-template-rows: 15% 400px 10% 10%;
+		grid-template-columns: 100vw;
+		grid-template-rows: 10% 20rem 10% 15%;
 
 		align-items: center;
 		justify-items: center;
@@ -1303,8 +1446,11 @@ figure {
 	.sub-section-flex {
 		/*page nos champignons + boutique + ?*/
 
-
+		width: 20rem;
 		padding: 5px;
+
+		height: 34rem;
+
 
 	}
 
@@ -1317,16 +1463,27 @@ figure {
 	}
 
 	.image-medium {
-		scale: 0.5;
+		height: 200px;
+		width: auto;
 	}
 
 	.image-champignons{
-		scale: 0.5;
+		height: 200px;
+		width: auto;
 	}
 
 	.image-big{
 		scale: 0.5;
 
+	}
+
+	.image-small{
+		scale: 0.5;
+	}
+
+	.spacer-video {
+	/* espace pour le header video dans le landing (espace en haut de page entre les sections et la vidéo) */
+	height: 365px;
 	}
 
 	.iframe{
@@ -1341,6 +1498,45 @@ figure {
 		scale: 0.75;
 	}
 
+	.title-landing{
+		top: 45px;
+		font-size: 28px;
+
+		left: -20px;
+		
+	}
+
+
+
+	.section-landing {
+	position: absolute;
+	width: 100%;
+	top: 150px;
+	left: 0px;
+	z-index: -1;
+
+	background-color: var(--couleur-gris-transparent);
+
+	padding-bottom: 2870px
+	/*Détermine la hauteur de la zone semi-transparente sous la vidéo de la page d'accueil (overlay de toute la page) ... background*/
+
+	}
+
+	.section-landing-champignons {
+	position: absolute;
+	width: 100%;
+	top: 200px;
+	left: 0px;
+	z-index: -1;
+
+	background-color: var(--couleur-gris-transparent);
+
+	padding-bottom: 3900px
+		/*Détermine la hauteur de la zone semi-transparente sous la bannière de la page champignon (overlay de toute la page) ... background*/
+
+
+	}
+
 
 	h1{
 		scale: 0.75;
@@ -1351,6 +1547,8 @@ figure {
 		white-space: normal;
 		word-wrap: break-word;
 		overflow-wrap: break-word;
+
+		padding: 5px;
 
 		
 	}
