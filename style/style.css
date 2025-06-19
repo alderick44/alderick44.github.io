@@ -52,9 +52,6 @@ footer {
 
 
 
-.padding{
-	padding: 20px;
-}
 
 
 
@@ -94,7 +91,7 @@ footer {
 
 .grid-footer{
 	display: grid;
-	grid-template-columns:1fr 2fr 3fr;
+	grid-template-columns: 165px 2fr 3fr;
 	grid-template-rows: 1fr;
 
 	align-items: center;
@@ -235,7 +232,7 @@ h3{ /*attention h3 + gros que h2...*/
 
 .video-landing {
 	height: auto;
-	width: 95%;
+	width: 90%;
 	object-fit: fill;
 }
 
@@ -417,7 +414,7 @@ section {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	box-shadow: 0px 0px	10px #000000;
+
 
 	width: 35rem;
 	height: 53rem;
@@ -427,12 +424,16 @@ section {
 
 }
 
+
 .sub-section-flex h1,p{
 
 	padding: 1px;
 	margin: 1px;
 
 }
+
+
+
 
 .sub-section-flex-a-propos {
 	/*page nos champignons + boutique + */
@@ -526,7 +527,7 @@ section {
         */
 
 	top: 100px;
-	left: 5%;
+	left: 6%;
 	color: #EBEBEB;
 }
 
@@ -817,6 +818,14 @@ figure {
 	box-shadow: 0px 0px	0px #ffffff;
 }
 
+.padding{
+	padding: 20px;
+}
+
+.padding-right{
+	padding-right: 25px;
+}
+
 @media screen and (max-width: 1459px)
 {
 
@@ -959,8 +968,10 @@ figure {
 
 	}
 
-	.image-big{
-		scale: 0.75;
+
+	.smaller-responsive{
+		
+		height: 37.5rem;
 
 	}
 
@@ -1157,10 +1168,10 @@ figure {
 	.sub-section-flex {
 		/*page nos champignons + boutique + ?*/
 
-		
 		padding: 1px;
 
 	}
+
 
 	.sub-section-flex-a-propos {
 
@@ -1252,6 +1263,12 @@ figure {
 
 	}
 
+	.smaller-responsive{ /*garder smaller en dessous de sub-section-flex pour eviter que la hauteur ne s'ajuste pas.*/
+		height: 32rem;
+	}
+
+
+
 	.sub-section-flex-triple {
 	width: 27rem;
 	height: 40rem;
@@ -1286,7 +1303,7 @@ figure {
 
 	background-color: var(--couleur-gris-transparent);
 
-	padding-bottom: 3150px
+	padding-bottom: 2900px
 	/*Détermine la hauteur de la zone semi-transparente sous la vidéo de la page d'accueil (overlay de toute la page) ... background*/
 
 
@@ -1402,6 +1419,18 @@ figure {
 	position: relative;
 	top: 0px;
 	}
+
+	.padding{
+	padding: 20px;
+	}
+
+	.padding-right{
+		padding-right: 25px;
+	}
+
+	.padding p{
+		padding: 15px;
+	}
 }
 
 
@@ -1452,10 +1481,12 @@ figure {
 		width: 20rem;
 		padding: 5px;
 
-		height: 34.6rem;
+		height: 27rem;
 
 
 	}
+
+
 
 	form{
 		width: 48%;
@@ -1476,7 +1507,8 @@ figure {
 	}
 
 	.image-big{
-		scale: 0.5;
+		width: 200px;
+		height: auto;
 
 	}
 
@@ -1534,7 +1566,7 @@ figure {
 
 	background-color: var(--couleur-gris-transparent);
 
-	padding-bottom: 3900px
+	padding-bottom: 3550px
 		/*Détermine la hauteur de la zone semi-transparente sous la bannière de la page champignon (overlay de toute la page) ... background*/
 
 
