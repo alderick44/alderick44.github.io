@@ -878,6 +878,11 @@ figure {
 	height: 700px;
 	}
 
+	.video-background {
+	top: 0px;
+	left: -250px;
+	}
+
 	.title-landing {
 		position: absolute;
 		text-align: left;
@@ -999,7 +1004,7 @@ figure {
 
 		background-color: var(--couleur-gris-transparent);
 
-		padding-bottom: 3550px
+		padding-bottom: 3450px
 		/*Détermine la hauteur de la zone semi-transparente sous la vidéo de la page d'accueil (overlay de toute la page) ... background*/
 
 
@@ -1015,7 +1020,7 @@ figure {
 
 		background-color: var(--couleur-gris-transparent);
 
-		padding-bottom: 3050px
+		padding-bottom: 2950px
 			/*Détermine la hauteur de la zone semi-transparente sous la vidéo de la page d'accueil (overlay de toute la page) ... background*/
 
 
@@ -1111,6 +1116,11 @@ figure {
 	@media screen and (max-width: 969px)
 	{
 
+	.video-background {
+	top: -150px;
+	left: -250px;
+	}
+
 	.grid-section{
 		grid-template-columns: 1fr;
 		grid-template-rows: 1fr 1fr;
@@ -1180,6 +1190,11 @@ figure {
 
 		position: relative;
 		top: 50px;
+	}
+
+	.video-background {
+	top: -50px;
+	left: -100x;
 	}
 	
 	.sub-section-flex {
@@ -1568,7 +1583,7 @@ figure {
 
 	background-color: var(--couleur-gris-transparent);
 
-	padding-bottom: 2870px
+	padding-bottom: 2770px
 	/*Détermine la hauteur de la zone semi-transparente sous la vidéo de la page d'accueil (overlay de toute la page) ... background*/
 
 	}
@@ -1582,7 +1597,7 @@ figure {
 
 	background-color: var(--couleur-gris-transparent);
 
-	padding-bottom: 3550px
+	padding-bottom: 3750px
 		/*Détermine la hauteur de la zone semi-transparente sous la bannière de la page champignon (overlay de toute la page) ... background*/
 
 
