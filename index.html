@@ -1,126 +1,144 @@
 <!DOCTYPE html>
 <html>
-   <head>
 
-      <!-- Prévient un bug avec le responsive automatique avec l'outil inspecteur...-->
-      <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+<head>
 
-      <link rel="icon" href="favicon.ico" type="image/x-icon">
-      <link rel="stylesheet" href="style/style.css">
-      <!--Font Beba Neue-->
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-      <!--Font Inter-->
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+   <!-- Prévient un bug avec le responsive automatique avec l'outil inspecteur...-->
+   <meta name="viewport"
+      content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
 
-      <meta name="viewport" content="width-device-width, initial-scale=1, shrink-to-fit=no">
+   <link rel="icon" href="favicon.ico" type="image/x-icon">
+   <link rel="stylesheet" href="style/style.css">
+   <!--Font Beba Neue-->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet">
+   <!--Font Inter-->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet">
 
-   </head>
-   <body>
-      <header>
-         <div class="wrapper over">
-            <div class="header-content">
+   <meta name="viewport" content="width-device-width, initial-scale=1, shrink-to-fit=no">
 
-               
-               <a href="index.html">
-               <img src="media-files/images/logo-transparent-0.2.png"  class="logo logo-border" alt="logo sporacultus">
-               </a> 
+</head>
 
-               <div class="flex-responsive">
-                  <h2 class="red-border responsive-margin">Site web en développement</h2>
-                  <nav class="nav">
-                     <div class="utilitaire">
-                        <ul>
-                           <li>
-                              <a href="index.html">
-                                 <img src="media-files/images/logo-transparent-0.2.png"  class="logo-responsive logo-responsive-border" alt="logo sporacultus">
-                              </a>
-                           </li>
-                           <li><a href="a-propos.html" class="btn-small-nav">À propos</a></li>
-                           <li><a href="guides-et-conseils.html" class="btn-small-nav">Guides et conseils</a></li>
-                           <li><a href="nous-joindre.html" class="btn-small-nav">Nous joindre</a></li>
-                        </ul>
-                     </div>
+<body>
+   <header>
+      <div class="wrapper over">
+         <div class="header-content">
 
-                        <ul class="flex-responsive-704">
-                              <li><a href="champignons.html" class="btn-nav">Nos champignons</a></li>
-                              <li><a href="boutique.html" class="btn-nav">Boutique</a></li>
-                              <li><a href="producteurs.html" class="btn-nav">Pour les producteurs</a></li>
-                        </ul>
-                  </nav>
-               </div>
+
+            <a href="index.html">
+               <img src="media-files/images/logo-transparent-0.2.png" class="logo" alt="logo sporacultus">
+            </a>
+
+            <div class="flex-responsive">
+               <h2 class="red-border responsive-margin">Site web en développement</h2>
+               <nav class="nav">
+                  <div class="utilitaire">
+                     <ul>
+                        <li>
+                           <a href="index.html">
+                              <img src="media-files/images/logo-transparent-0.2.png"
+                                 class="logo-responsive logo-responsive-border" alt="logo sporacultus">
+                           </a>
+                        </li>
+                        <li><a href="a-propos.html" class="btn-small-nav">À propos</a></li>
+                        <li><a href="guides-et-conseils.html" class="btn-small-nav">Guides et conseils</a></li>
+                        <li><a href="nous-joindre.html" class="btn-small-nav">Nous joindre</a></li>
+                     </ul>
+                  </div>
+
+                  <ul class="flex-responsive-704">
+                     <li><a href="champignons.html" class="btn-nav">Nos champignons</a></li>
+                     <li><a href="boutique.html" class="btn-nav">Boutique</a></li>
+                     <li><a href="producteurs.html" class="btn-nav">Pour les producteurs</a></li>
+                  </ul>
+               </nav>
             </div>
          </div>
-      </header>
-      <main>
-         <video class="video-background" autoplay loop muted>
+      </div>
+   </header>
+
+   <main>
+      <video class="video-background" autoplay loop muted>
+         <source src="media-files/videos/timelapse-GSPI.mp4">
+      </video>
+      <section class="section-landing">
+         <!--***modifier classe h1 pour section p{(code csss)} -->
+         <div class="flexbox-video-landing">
+            <video class="video-landing" autoplay loop muted>
+               <source src="media-files/videos/presentation-spora.mp4">
+            </video>
+         </div>
+         <h1 class="title-landing">Cultivez vos champignons <br> de la maison</h1>
+         <h1 class="sub-title-landing">Laissez-vous guider par notre expertise et <br> notre service personalisé</h1>
+      </section>
+      <!-- pt pas optimal comme manière de disposer de l'espace -->
+      <div class="spacer-video"></div>
+      <!-- Utilisé pour pousser les sections/contenu du site plus bas que la vidéo d'accueil du site -->
+      <section class="wrapper over">
+         <h1>Accueil</h1>
+         <p class="padding">
+            Sporacultus est un projet qui cultive la passion des champignons. Producteurs et amateurs de champignons
+            comestibles, vous êtes au bon endroit. Visitez notre site pour consulter nos produits conçus pour s'adapter
+            à votre niveau et vos besoins.
+         </p>
+      </section>
+      <section class="wrapper over center">
+         <h1>Promotions</h1>
+         <figure>
+            <img src="media-files/images/produits/bloc-production-pleurote.jpg" class="image-big"
+               alt="bloc de production champignon">
+         </figure>
+         <h1>2 pour 1</h1>
+         <p>Obtenez 2 blocs de production pour le prix d'un pour 2 fois plus de champignons!</p>
+         <a class="btn" href="boutique.html">Boutique</a>
+      </section>
+      <section class="wrapper over center">
+         <h1>Apprivoiser la culture de champignons</h1>
+         <video class="video-section" autoplay loop muted>
             <source src="media-files/videos/timelapse-GSPI.mp4">
          </video>
-         <section class="section-landing">
-            <!--***modifier classe h1 pour section p{(code csss)} -->
-            <div class="flexbox-video-landing">
-               <video class="video-landing" autoplay loop muted>
-                  <source src="media-files/videos/presentation-spora.mp4">
-               </video>
-            </div>
-            <h1 class="title-landing">Cultivez vos champignons <br> de la maison</h1>
-            <h1 class="sub-title-landing">Laissez-vous guider par notre expertise et <br> notre service personalisé</h1>
-         </section>
-         <!-- pt pas optimal comme manière de disposer de l'espace -->
-         <div class="spacer-video"></div>
-         <!-- Utilisé pour pousser les sections/contenu du site plus bas que la vidéo d'accueil du site -->
-         <section class="wrapper over">
-            <h1>Accueil</h1>
-            <p class="padding">
-               Sporacultus est un projet qui cultive la passion des champignons. Producteurs et amateurs de champignons comestibles, vous êtes au bon endroit. Visitez notre site pour consulter nos produits conçus pour s'adapter à votre niveau et vos besoins.
-            </p>
-         </section>
-         <section class="wrapper over center">
-            <h1>Promotions</h1>
-            <figure>
-               <img src="media-files/images/produits/bloc-production-pleurote.jpg" class="image-big" alt="bloc de production champignon">
-            </figure>
-            <h1>2 pour 1</h1>
-            <p>Obtenez 2 blocs de production pour le prix d'un pour 2 fois plus de champignons!</p>
-            <a class="btn" href="boutique.html">Boutique</a>
-         </section>
-         <section class="wrapper over center">
-            <h1>Apprivoiser la culture de champignons</h1>
-            <video class="video-section" autoplay loop muted>
-               <source src="media-files/videos/timelapse-GSPI.mp4">
-            </video>
-            <h2>Tentez l'expérience de la maison </h1>
-            <p>Nous vous offrons des produits facilitant l'apprentissage. Des produits pour débutants sont disponibles, aucune connaissance requise.</p>
+         <h2>Tentez l'expérience de la maison </h1>
+            <p>Nous vous offrons des produits facilitant l'apprentissage. Des produits pour débutants sont disponibles,
+               aucune connaissance requise.</p>
             <a class="btn" href="guides-et-conseils.html">Consulter nos guides</a>
-         </section>
-         <section class="wrapper over center padding">
-            <h1>Nouveau point de cueillette</h1>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5509.155974978947!2d-72.5747493603107!3d46.33807204726356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc7cf4c65339a6f%3A0x77ce72335e69326c!2sCulture%20Orenda%20-%20Oasis%20Urbaine!5e0!3m2!1sfr!2sca!4v1747000667418!5m2!1sfr!2sca" class="iframe" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <h2>Passez à Trois-Rivières</h2>
-            <p>Disponibles à Trois-Rivières chez Culture Orenda</p>
-            <address>
-               1014 Rue Albert Durand<br>
-               Trois-Rivières, QC G8Z 2M7
-            </address>
-            <p>
-               Mardi et Jeudi de 17h30 à 19h30<br>
-               Vendredi de 10h à 17h
-            </p>
-            <p>Prochaine exposition : <br>
-               <time datetime="2025-06-05T17:30">5 juin 2025 à 17h30</time>
-            </p>
-            <a class="btn padding" href="boutique.html">Réserver ma trousse</a>
-         </section>
-      </main>
-      <div class="spacer-video2"></div>
-         <footer>
-            <div class="wrapper grid-footer">
-               <p>Réalisé par <br>Aldérick Gauthier</p>
-               <p style="grid-column: 3;">Dans le cadre de l'AEC en design et intégration Web - Cégep de Trois-Rivières</p>
-            </div>
-         </footer>
-   </body>
+      </section>
+      <section class="wrapper over center padding">
+         <h1>Nouveau point de cueillette</h1>
+         <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5509.155974978947!2d-72.5747493603107!3d46.33807204726356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc7cf4c65339a6f%3A0x77ce72335e69326c!2sCulture%20Orenda%20-%20Oasis%20Urbaine!5e0!3m2!1sfr!2sca!4v1747000667418!5m2!1sfr!2sca"
+            class="iframe" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+         <h2>Passez à Trois-Rivières</h2>
+         <p>Disponibles à Trois-Rivières chez Culture Orenda</p>
+         <address>
+            1014 Rue Albert Durand<br>
+            Trois-Rivières, QC G8Z 2M7
+         </address>
+         <p>
+            Mardi et Jeudi de 17h30 à 19h30<br>
+            Vendredi de 10h à 17h
+         </p>
+         <p>Prochaine exposition : <br>
+            <time datetime="2025-06-05T17:30">5 juin 2025 à 17h30</time>
+         </p>
+         <a class="btn padding" href="boutique.html">Réserver ma trousse</a>
+      </section>
+   </main>
+   
+   <div class="spacer-video2"></div>
+   <footer>
+      <div class="wrapper grid-footer">
+         <p>Réalisé par <br>Aldérick Gauthier</p>
+         <p style="grid-column: 3;">Dans le cadre de l'AEC en design et intégration Web - Cégep de Trois-Rivières</p>
+      </div>
+   </footer>
+</body>
+
 </html>

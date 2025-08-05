@@ -741,9 +741,6 @@ tfoot td {
 .logo {
 	height: 150px;
 }
-.logo-border{
-	border-bottom: solid 1px var(--couleur-bleu)
-}
 
 .logo-responsive{
 	height: 50px;
