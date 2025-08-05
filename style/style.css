@@ -417,7 +417,7 @@ section {
 
 
 	width: 35rem;
-	height: 53rem;
+	height: 35rem;
 
 
 	padding: 10px;
@@ -463,6 +463,10 @@ section {
 
 	padding: 50px;
 
+}
+
+.sub-section-flex-triple-texte {
+	flex:1;
 }
 
 .sub-section-flex-row {
@@ -1010,6 +1014,19 @@ figure {
 
 	}
 
+	.sub-section-flex {
+	/*page nos champignons + boutique + */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	width: 33rem;
+	height: 45rem;
+
+	padding: 1px;
+
+	}
+
 
 	.section-landing-champignons {
 		position: absolute;
@@ -1197,12 +1214,6 @@ figure {
 	left: -100x;
 	}
 	
-	.sub-section-flex {
-		/*page nos champignons + boutique + ?*/
-
-		padding: 1px;
-
-	}
 
 
 	.sub-section-flex-a-propos {
@@ -1289,7 +1300,7 @@ figure {
 	align-items: center;
 
 	width: 33rem;
-	height: 45rem;
+	height: 37rem;
 
 	padding: 1px;
 
@@ -1303,7 +1314,7 @@ figure {
 
 	.sub-section-flex-triple {
 	width: 27rem;
-	height: 40rem;
+	height: 36rem;
 	padding: 2px;
 
 	}
@@ -1481,7 +1492,7 @@ figure {
 
 	.sub-section-flex-triple {
 	width: 20rem;
-	height: 40rem;
+	height: 28rem;
 	padding: 2px;
 
 	}
@@ -1544,7 +1555,8 @@ figure {
 	}
 
 	.image-small{
-		scale: 0.5;
+		width: 190px;
+		height: auto;
 	}
 
 	.spacer-video {
