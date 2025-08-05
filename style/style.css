@@ -749,9 +749,6 @@ tfoot td {
 
 }
 
-.logo-responsive-border{
-	border-bottom: solid 1px var(--couleur-bleu)
-}
 
 .logo:hover {
 	transform: scale(1.10);
@@ -919,11 +916,6 @@ figure {
 
 	.logo-responsive{
 		display: block;
-	}
-
-	.logo-responsive-border{
-		display: block;
-		border-bottom: solid 1px var(--couleur-bleu)
 	}
 
 	.header-content{
