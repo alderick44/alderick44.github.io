@@ -843,7 +843,6 @@ figure {
 
 	display: grid;
 	grid-template-columns: 500px;
-	grid-template-rows: 15% 426px 10% 10%;
 
 	align-items: center;
 	justify-items: center;
@@ -1026,7 +1025,6 @@ figure {
 
 	display: grid;
 	grid-template-columns: 22rem;
-	grid-template-rows: 15% 426px 10% 10%;
 
 	align-items: center;
 	justify-items: center;
@@ -1396,8 +1394,7 @@ figure {
 	.grid-sub-section{
 
 	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: 15% 426px 10% 10%;
+	
 
 	align-items: center;
 	justify-items: center;
@@ -1483,7 +1480,7 @@ figure {
 	.grid-sub-section{
 		display: grid;
 		grid-template-columns: 100vw;
-		grid-template-rows: 10% 20rem 10% 15%;
+		grid-template-rows: 10% 20rem 40px 15%;
 
 		align-items: center;
 		justify-items: center;
