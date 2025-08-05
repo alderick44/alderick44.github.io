@@ -225,9 +225,11 @@ h3{ /*attention h3 + gros que h2...*/
 }
 
 .video-section-special {
-	height: 300px;
+	height: auto;
 	width: 300px;
 	object-fit: contain;
+
+	padding: 15px;
 }
 
 .video-landing {
@@ -409,8 +411,9 @@ section {
 }
 
 
+
 .sub-section-flex {
-	/*page nos champignons + boutique + */
+	/*page boutique */
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -420,8 +423,14 @@ section {
 	height: 35rem;
 
 
-	padding: 10px;
+	padding: 50px;
 
+	gap: 25px;
+
+}
+
+.sub-section-flex-producteur{
+	height: auto;
 }
 
 
@@ -997,6 +1006,7 @@ figure {
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		gap: 100px;
 	}
 
 	.section-landing {
@@ -1027,6 +1037,10 @@ figure {
 
 	}
 
+	.sub-section-flex-producteur{
+	height: auto;
+	}
+
 
 	.section-landing-champignons {
 		position: absolute;
@@ -1047,15 +1061,10 @@ figure {
 
 	display: grid;
 	grid-template-columns: 22rem;
-
 	align-items: center;
 	justify-items: center;
-
 	box-shadow: 0px 0px	20px #00000070;
-
-	padding: 20px;
-	
-
+	padding: 20px;	
 	}
 
 	.grid-section{
@@ -1225,6 +1234,7 @@ figure {
 	}
 
 
+
 	.title-landing {
 	position: absolute;
 	text-align: left;
@@ -1304,6 +1314,10 @@ figure {
 
 	padding: 1px;
 
+	}
+
+	.sub-section-flex-producteur{
+		height: auto;
 	}
 
 	.smaller-responsive{ /*garder smaller en dessous de sub-section-flex pour eviter que la hauteur ne s'ajuste pas.*/
@@ -1524,10 +1538,11 @@ figure {
 		padding: 5px;
 
 		height: 27rem;
-
-
 	}
 
+	.sub-section-flex-producteur{
+		height: auto;
+	}
 
 
 	form{
