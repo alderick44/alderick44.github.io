@@ -1118,7 +1118,9 @@ figure {
 	.video-section {
 	height: 300px;
 	width: auto;
-	object-fit: cover;
+	object-fit: none;
+
+
 
 	}
 
