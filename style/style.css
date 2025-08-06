@@ -560,8 +560,10 @@ section {
 	display: grid;
 	justify-items: center;
 	justify-content: center;
-	
+}
 
+.center-grid__gap{
+	gap: 15px;
 }
 
 .center-self {
@@ -981,6 +983,10 @@ figure {
 
 	}
 
+	.center-grid__gap{
+	gap: 5px;
+	}
+
 	.grid-responsive2{
 		display: grid;
 		flex-direction: column;
@@ -1355,7 +1361,7 @@ figure {
 
 	.iframe{
 		width: 400px;
-		height: 250;
+		height: 350px;
 	}
 
 	header{
@@ -1592,7 +1598,8 @@ figure {
 	}
 
 	.iframe{
-		scale: 0.65;
+		width: 300px;
+		height: 250xp;
 	}
 
 	.btn{
