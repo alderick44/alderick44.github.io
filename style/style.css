@@ -400,7 +400,6 @@ section {
 	display: flex;
 	flex-direction: column;
 	padding: 50px;
-
 	align-items: center;
 }
 
@@ -1555,7 +1554,7 @@ figure {
 		width: 20rem;
 		padding: 5px;
 
-		height: 27rem;
+		height: auto;
 	}
 
 	.sub-section-flex-producteur{
