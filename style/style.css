@@ -248,7 +248,7 @@ h3{ /*attention h3 + gros que h2...*/
 .video-background {
 	object-fit: cover;
 	position: fixed;
-	top: 200px;
+	top: -100px;
 	left: 0px;
 	height: auto;
 	min-width: 100%;
@@ -896,7 +896,7 @@ figure {
 	}
 
 	.video-background {
-	top: 0px;
+	top: -285px;
 	left: -250px;
 	}
 
@@ -1034,7 +1034,7 @@ figure {
 
 		background-color: var(--couleur-gris-transparent);
 
-		padding-bottom: 3450px
+		padding-bottom: 3250px
 		/*Détermine la hauteur de la zone semi-transparente sous la vidéo de la page d'accueil (overlay de toute la page) ... background*/
 
 
@@ -1377,7 +1377,7 @@ figure {
 
 	background-color: var(--couleur-gris-transparent);
 
-	padding-bottom: 2900px
+	padding-bottom: 2700px
 	/*Détermine la hauteur de la zone semi-transparente sous la vidéo de la page d'accueil (overlay de toute la page) ... background*/
 
 
@@ -1521,6 +1521,11 @@ figure {
 
 	}
 
+	.video-background {
+	top: -50px;
+	left: -1000px;
+	}
+
 	.sub-section-flex-triple {
 	width: 20rem;
 	height: 28rem;
@@ -1628,7 +1633,7 @@ figure {
 
 	background-color: var(--couleur-gris-transparent);
 
-	padding-bottom: 2770px
+	padding-bottom: 2450px
 	/*Détermine la hauteur de la zone semi-transparente sous la vidéo de la page d'accueil (overlay de toute la page) ... background*/
 
 	}
