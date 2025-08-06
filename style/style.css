@@ -500,10 +500,13 @@ section {
 }
 
 
+
 .flex-responsive-704{
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	padding: 5px;
+
 }
 
 
@@ -905,8 +908,12 @@ figure {
 
 	}
 
-	.wrapper{
-		padding-top:10px;
+	.wrapper-header{
+		padding-top: 10px;
+	}
+
+	.utilitaire {
+	justify-content: center;
 	}
 
 
@@ -925,6 +932,10 @@ figure {
 		display: flex;
 		flex-direction: column-reverse;
 		align-items: center;
+	}
+
+	.flex-responsive ul{
+		padding: 1px;
 	}
 
 	.logo{
@@ -1006,7 +1017,7 @@ figure {
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		gap: 100px;
+		gap: 75px;
 	}
 
 	.section-landing {
@@ -1081,8 +1092,8 @@ figure {
 
 	p{
 		font-size: 14px;
-		padding-top: 10px;
-		padding-bottom: 50px;
+		padding-top: 15px;
+		padding-bottom: 15px;
 	}
 
 	.image-xl {
@@ -1335,6 +1346,7 @@ figure {
 
 	.flex-responsive-704{
 		flex-direction: column;
+		margin-top: 1px;
 	}
 
 	.flex-responsive-704 li{
