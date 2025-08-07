@@ -555,6 +555,10 @@ section {
 
 }
 
+.center-gap{
+	gap: 15px;
+}
+
 .center-grid {
 	display: grid;
 	justify-items: center;
@@ -984,6 +988,10 @@ figure {
 
 	.center-grid__gap{
 	gap: 5px;
+	}
+
+	.center-gap{
+		gap: 5px;
 	}
 
 	.grid-responsive2{
