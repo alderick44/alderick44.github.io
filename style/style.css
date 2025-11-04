@@ -12,8 +12,6 @@
 
 
 }
-
-
 header {
 	top: 0;
 	left: 0;
@@ -23,91 +21,56 @@ header {
 	background-color: var(--couleur-beige);
 	overflow: visible;
 	border: var(--couleur-bleu) solid 1px;
-
 	z-index: 10;
 	/*pour eviter que d'autres éléments soient en dessous. Ne pas enlever*/
 }
-
 footer {
 	background-color: var(--couleur-bleu);
 	color: aliceblue;
 	margin-bottom: 25px;
-
 	border-radius: 55px;
 }
-
 .footer-flex {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 }
-
 .footer-flex p {
 	padding: 10px;
 }
-
 .grid-footer p {
 	padding: 10px;
 }
-
-
-
-
-
-
-
-
-
 .row-2-responsive{
 	grid-row: 1; /*2 in queries*/
 }
-
 .grid-sub-section{
-
 	display: grid;
 	grid-template-columns: 30rem;
 	grid-template-rows: 15% 426px 50px 10%;
-
 	align-items: center;
 	justify-items: center;
-
 	box-shadow: 0px 0px	20px #00000070;
-
 	padding: 50px;
-	
-
 }
-
 .grid-section{
-
 	display: grid;
 	grid-template-columns: 40rem 40rem;
 	grid-template-rows: 50rem;
-
 	align-items: center;
 	justify-items: center;
-
 }
-
 .grid-footer{
 	display: grid;
 	grid-template-columns: 165px 2fr 3fr;
 	grid-template-rows: 1fr;
-
 	align-items: center;
 	justify-content: space-between;
 }
-
-
-
-
-
 .grid-nav{
 	display: grid;
 	grid-template-rows: 1fr;
-
 }
-
 .grid-nav ul {
 	display: grid;
 	grid-template-columns: 100px 50px 50px 50px;
@@ -115,136 +78,92 @@ footer {
 	justify-content: end;
 	align-items: center;
 	position: relative;
-
-
-	
 }
-
 .grid-header-content {
 	display: grid;
-
 	grid-template-columns: auto auto auto;
 	grid-template-rows: auto;
-
 	align-items: center;
-
-
-	
 }
-
 .grid-column-responsive {
-		grid-column: 3; /*Devient 2 dans les queries*/
-	}
-
+	grid-column: 3; /*Devient 2 dans les queries*/
+}
 .grid-responsive {
 	display: grid;
 	grid-template-columns: 250px 700px;
-	grid-template-rows: 1fr;
-	
+	grid-template-rows: 1fr;	
 	justify-content: end;
-
-
 }
-
 .grid-responsive-704 ul{
 	display: grid;
 	grid-template-columns: auto auto auto;
 	grid-template-rows: 1fr;
-
 }
-
-
-
-
 .wrapper {
 	width: 90%;
 	padding: 25px;
 	max-width: 1800px;
 	margin: 0 auto;
 	height: auto;
-
 	position: relative;
-
 }
-
 p {
 	text-align: center;
-
 }
-
 h1 {
 	font-size: 200%;
 	color: #1F0812;
 	font-family: "Bebas Neue";
 	font-weight: normal;
-
 	text-align: center;
 }
-
-
-
 h2 {
 	font-size: 150%;
 	color: #1F0812;
 	font-family: "Bebas Neue";
 	font-weight: normal;
 }
-
-
 h3{ /*attention h3 + gros que h2...*/
 	font-size: 350%;
 	color: #1F0812;
 	font-family: "Bebas Neue";
 	font-weight: normal;
-
 	text-align: center;
 }
 .over {
 	overflow: hidden;
 	margin-bottom: 25px;
 }
-
 .header-content {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 }
-
-
 .spacer-banner {
 	/* espace pour la bannière de la page "Nos champignons" (espace au haut de la page qui pousse le contenu du site vers le bas) */
 	height: 950px;
 }
-
-
 .video-section {
 	height: 600px;
 	width: 1200px;
 	object-fit: cover;
-
 }
-
 .video-section-special {
 	height: auto;
 	width: 300px;
 	object-fit: contain;
-
 	padding: 15px;
 }
-
 .video-landing {
 	height: auto;
 	width: 90%;
 	object-fit: fill;
 }
-
 .flexbox-video-landing{
 	display: flex;
 	justify-content: center;
-
 	background: #1b1b1b;
 }
-
 .video-background {
 	object-fit: cover;
 	position: fixed;
@@ -254,27 +173,18 @@ h3{ /*attention h3 + gros que h2...*/
 	min-width: 100%;
 	min-height: 100%;
 	z-index: -3;
-
 }
-
-
-.section-landing {
-	
-	/*Revoir l'utilisatin de cette classe...ne se copie pas bien pour recrerr l'effet ailleur pt?? */
+.section-landing {	
+	/*Revoir l'utilisatin de cette classe...ne se copie pas bien pour recréer l'effet ailleur pt?? */
 	position: absolute;
 	width: 100%;
 	top: 200px;
 	left: 0px;
 	z-index: -1;
-
 	background-color: var(--couleur-gris-transparent);
-
 	padding-bottom: 3400px
 		/*Détermine la hauteur de la zone semi-transparente sous la vidéo de la page d'accueil (overlay de toute la page) ... background*/
-
-
 }
-
 .section-landing-champignons {
 	/*Revoir l'utilisatin de cette classe...ne se copie pas bien pour recrerr l'effet ailleur pt?? */
 	position: absolute;
@@ -282,57 +192,39 @@ h3{ /*attention h3 + gros que h2...*/
 	top: 200px;
 	left: 0px;
 	z-index: -1;
-
 	background-color: var(--couleur-gris-transparent);
-
 	padding-bottom: 3150px;
 		/*Détermine la hauteur de la zone semi-transparente sous la vidéo de la page d'accueil (overlay de toute la page) ... background*/
-
-
 }
-
-
-
 .spacer-video {
 	/* espace pour le header video dans le landing (espace en haut de page entre les sections et la vidéo) */
 	height: 1400px;
 }
-
 .spacer-video2 {
 	/* espace pour la video de background (espace au bas de la page pour créer un espace vide) */
 	height: 500px;
 }
-
 .image-xl {
 	width: auto;
 	height: 650px;
 }
-
 .section-border-right {
 	border-right: 1px solid var(--couleur-noir);
 
 }
-
 .section-border-left {
 	border-left: 1px solid var(--couleur-noir);
 
 }
-
-
 nav li {
 	margin: 0 10px;
 	list-style: none;
 }
-
 .grid-utilitaire {
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: 1fr;
-
-
-
 }
-
 .grid-utilitaire ul {
 	display: grid;
 	grid-template-columns: auto auto auto auto;
@@ -341,189 +233,123 @@ nav li {
 	justify-content: end;
 	justify-items: stretch;
 }
-
-
-
 .utilitaire {
 	display: flex;
 	justify-content: flex-end;
 	align-items: flex-end;
 }
-
 .utilitaire ul {
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
 	position: relative;
 }
-
 .nav ul {
 	display: flex;
 	justify-content: center;
 }
-
-
 p {
 	font-family: "Inter";
 }
-
 main {
 	margin-top: 225px;
 	margin-bottom: 150px;
 }
-
 body {
 	background-color: var(--couleur-blanc-bleu);
+	
 }
-
 section {
 	background-color: var(--couleur-gris-bleu);
 	box-shadow: 0px 0px 5px rgb(0, 0, 0);
 }
-
-
-
-
 .section-flex { 
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-
 	align-items: center;
-
-
 }
-
-
-
 .section-flex-column-padding {
 	display: flex;
 	flex-direction: column;
 	padding: 50px;
 	align-items: center;
 }
-
 .section-flex-row {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 }
-
-
-
 .sub-section-flex {
 	/*page boutique */
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-
-
 	width: 35rem;
 	height: 35rem;
-
-
 	padding: 50px;
-
 	gap: 25px;
-
 }
-
 .sub-section-flex-producteur{
 	height: auto;
 }
-
-
 .sub-section-flex h1,p{
-
 	padding: 1px;
 	margin: 1px;
-
 }
-
-
-
-
 .sub-section-flex-a-propos {
 	/*page nos champignons + boutique + */
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	box-shadow: 0px 0px	10px #000000;
-
 	width: 35rem;
 	height: 15rem;
-
-
 	padding: 10px;
-
 }
-
-
 .sub-section-flex-triple {
 	/*page nos champignons + boutique + */
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	box-shadow: 0px 0px	10px #000000;
-
 	width: 20rem;
 	height: 40rem;
-
 	padding: 50px;
-
 }
-
 .sub-section-flex-triple-texte {
 	flex:1;
 }
-
 .sub-section-flex-row {
 	/*page boutique*/
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-
 	padding: 50px;
-
 }
-
 .section-flex-main {
 	display: flex;
 	justify-content: space-between;
-
 }
-
 .flex-responsive{
 	display: flex;
 	flex-direction: row;
 }
-
-
-
 .flex-responsive-704{
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	padding: 5px;
-
 }
-
-
 .responsive-margin{
 	margin-top: 40px;
 }
-
-
-
 .title {
 	font-size: 200%;
 	color: #1F0812;
 	font-family: "Bebas Neue";
 	font-weight: normal;
-
 }
-
-
 .title-landing {
 	position: absolute;
 	text-align: left;
@@ -540,99 +366,115 @@ section {
             0 0 40px #0456AF,
             0 0 80px #0456AF;
         */
-
 	top: 100px;
 	left: 6%;
 	color: #EBEBEB;
 }
-
 .center {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-	
-
-
 }
-
 .center-gap{
 	gap: 15px;
 }
-
 .center-grid {
 	display: grid;
 	justify-items: center;
 	justify-content: center;
 }
-
 .center-grid__gap{
 	gap: 15px;
 }
-
 .center-self {
 	align-self: center;
 }
-
-
-
 .iframe {
 	width: 600px;
 	height: 450px;
 }
 
+/*--------------------------------------------------------------------------------*/
+.display-off{
+	display: none;
+}
+.display-on{
+	display: block;
+}
+.input-group {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/*
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+	*/
+	.btn{
+		font-size: 1rem;
+		line-height: 1.5;
+		border-radius: 0.375rem;
+		border-width: 1px;
+		padding: 0.375rem;
+		margin: 0px;
 
-
+	}
+	:first-child{
+		border-top-right-radius: 0px;
+		border-bottom-right-radius: 0px;
+		margin-right: -1px;
+	}
+	:nth-child(3){
+		border-top-left-radius: 0px;
+		border-bottom-left-radius: 0px;
+		margin-left: -1px;
+	}
+	.form-control{
+		padding: 0.375rem .75rem;
+		width: 50%;
+		border-width: 1px;
+		text-align: center;
+		font-size: 1rem;
+		line-height: 1.5;
+		margin: 0;
+		box-sizing: border-box;
+	}
+}
 input:not([type=radio]) {
   width: 100%;
   background-color: #aacff445;
 }
-
 input[type=radio] {
 	margin: 10px;
 }
-
 textarea {
   width: 95%;
   background-color: #aacff445;
 }
-
-
 table {
-
 	border: 2px solid var(--couleur-noir);
 	border-collapse: collapse;
 	/* les éléments de la table se collent ensemble */
 	background-color: var(--couleur-gris-bleu);
 	color: white;
-
 	color: #000000;
-
 }
-
-
-
 td,th {
 	padding: 10px;
 	border: 2px solid var(--couleur-noir);
 	text-align: center;
 }
-
 th {
 	background-color: var(--couleur-gris-bleu);
-
 }
-
-
 tbody td {
 	color: var(--couleur-noir);
 }
-
-
 tfoot td {
 	padding: 25px;
 }
-
-
 .btn-table {
 	font-size: 150%;
 	text-decoration: none;
@@ -641,11 +483,8 @@ tfoot td {
 	background-color: #0456AF;
 	padding: 15px;
 	width: fit-content;
-
 	border-radius: 20px;
 }
-
-
 .btn {
 	font-size: 150%;
 	text-decoration: none;
@@ -655,13 +494,8 @@ tfoot td {
 	background-color: #0456AF;
 	padding: 15px;
 	width: fit-content;
-
 	border-radius: 20px;
-
 }
-
-
-
 .btn-not-available {
 	font-size: 150%;
 	text-decoration: none;
@@ -671,15 +505,10 @@ tfoot td {
 	background-color: var(--couleur-beige);
 	padding: 15px;
 	width: fit-content;
-
 	border-radius: 20px;
-
 }
-
 .btn-invisible {
-
 	z-index: -10; /*rend le bouton invisible et inclicable mais il continue d'occuper l'espace (spacer de la même grosseur que le bouton original */
-
 	font-size: 150%;
 	text-decoration: none;
 	border: solid 1px var(--couleur-noir);
@@ -688,11 +517,8 @@ tfoot td {
 	background-color: var(--couleur-beige);
 	padding: 15px;
 	width: fit-content;
-
-
 	border-radius: 20px;
 }
-
 .btn-nav {
 	font-size: 150%;
 	text-decoration: none;
@@ -700,11 +526,8 @@ tfoot td {
 	color: #1F0812;
 	margin: 1.5px;
 	padding: 15px;
-
 	border-radius: 20px;
-
 }
-
 .btn-small {
 	font-size: 100%;
 	text-decoration: none;
@@ -714,7 +537,6 @@ tfoot td {
 	background-color: #0456AF;
 	padding: 10px;
 }
-
 .btn-small-nav {
 	font-size: 100%;
 	text-decoration: none;
@@ -722,367 +544,255 @@ tfoot td {
 	color: #1F0812;
 	padding: 10px;
 }
-
-
 /*Effets de survol*/
-
 .btn:hover {
 	color: #C1292E;
 }
-
 .btn-small:hover {
 	color: #C1292E;
 }
-
 .btn-nav:hover {
 	color: #C1292E;
 	text-decoration: underline #023266;
 }
-
 .btn-small-nav:hover {
 	color: #C1292E;
 	text-decoration: underline #023266;
 }
-
 .btn-not-available:hover {
 	color: var(--couleur-beige);
 	background-color: var(--couleur-gris-transparent);
 }
-
 .btn-table:hover {
 	color: #C1292E;
 	text-decoration: underline #023266;
 }
-
-
 .underline {
 	text-decoration: underline #023266;
 }
-
 .logo {
 	height: 150px;
 }
-
 .logo-responsive{
 	height: 50px;
 	display:none;
 	padding: 2.5px;
-
 }
-
-
 .logo:hover {
 	transform: scale(1.10);
 }
-
 .logo-responsive:hover {
 	transform: scale(1.10);
 }
-
 .image-banner {
 	width: 100%;
 	object-fit: cover;
 	max-width: 3000px;
 }
-
 .image-small {
 	height: 250px;
 }
-
 .image-medium {
 	height: 400px
 }
-
 .image-big {
 	width: 425px;
 }
-
 .image-champignons{
 	height: 400px;
 	width: 513px;
-
 	object-fit: contain;
-	
-
 }
-
 /*
 .image-aspect {
-
 	max-width: 90%;
     height: auto;
     aspect-ratio: 4928 / 3264;
     object-fit: cover;
-    
 }
 */
-
 figure {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
 }
-
 .rouge {
 	color: #C1292E;
-
 }
-
 .red-border {
 	color: #C1292E;
 	padding:12px;
 	border: solid 1px #1d1d1e;
-
 }
-
 .bleu {
 	color: #0456AF;
 }
-
 .border-shadow-remove{
 	box-shadow: 0px 0px	0px #ffffff;
 }
-
 .padding{
 padding: 20px;
 }
-
 .padding-right{
 	padding-right: 25px;
 }
-
 .padding p{
 	padding: 15px;
 }
-
-
-
 @media screen and (max-width: 1459px)
 {
-
 	.grid-sub-section{
-
 	display: grid;
 	grid-template-columns: 500px;
-
 	align-items: center;
 	justify-items: center;
-
 	box-shadow: 0px 0px	20px #00000070;
-
 	padding: 20px;
-
-
 	}
-
 }
-
-
-
 @media screen and (max-width: 1280px)
 {
-
-
-
-
 	header{
 		height: 150px;
 	}
-
 	.spacer-video {
 	/* espace pour le header video dans le landing (espace en haut de page entre les sections et la vidéo) */
 	height: 820px;
  	}
-
 	.spacer-banner {
 	/* espace pour la bannière de la page "Nos champignons" (espace au haut de la page qui pousse le contenu du site vers le bas) */
 	height: 700px;
 	}
-
 	.video-background {
 	top: -285px;
 	left: -250px;
 	}
-
 	.title-landing {
 		position: absolute;
 		text-align: left;
 		font-size: 300%;
-
 		top: 30px;
-
 	}
-
 	.wrapper-header{
 		padding-top: 10px;
 	}
-
 	.utilitaire {
 	justify-content: center;
 	}
-
-
 	.btn-nav {
 		font-size: 125%;
 		margin: 0.5px;
 		padding: 10px;
 		border-radius: 15px;
 	}
-
 	.btn-small-nav{
 		font-size: 90%;
 	}
-
 	.flex-responsive{
 		display: flex;
 		flex-direction: column-reverse;
 		align-items: center;
 	}
-
 	.flex-responsive ul{
 		padding: 1px;
 	}
-
 	.logo{
 		display: none;
 	}
-
 	.logo-responsive{
 		display: block;
 	}
-
 	.header-content{
 		display: flex;
 		align-items: center;
 		justify-content: center;
 	}
-
 	.grid-header-content {
 		display: grid;
 		grid-template-columns: 1fr;
 		justify-content: center;
-
 	}
-
-
 	.responsive-margin{
 		margin-top: 10px;
 	}
-
 	header .red-border{
 		font-size: 90%;
 		padding: 5px;
 	}
-
-
 	.grid-responsive {
 		display: grid;
 		grid-template-columns: 663px;
 		grid-template-rows: 1fr;
-
 		justify-items: center;
 		justify-content: center;
-
 	}
-
 	.center-grid__gap{
 	gap: 5px;
 	}
-
 	.center-gap{
 		gap: 5px;
 	}
-
 	.grid-responsive2{
 		display: grid;
 		flex-direction: column;
 	}
-
  	.grid-column-responsive { /*pour n'avoir qu'une seule colonne centré*/
 		grid-column: 1;
 	}
-
 	.row-2-responsive{
 		grid-row: 2;
 	}
-
-
 	.image-medium {
 		width:auto;
 		height:250px;
 	}
-
 	.image-champignons{
 		height: 250px;
 		width: 321px;
 
 	}
-
-
 	.smaller-responsive{
-		
 		height: 37.5rem;
-
 	}
-
 	.section-flex-row{
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		gap: 75px;
 	}
-
 	.section-landing {
 		position: absolute;
 		width: 100%;
 		top: 150px;
 		left: 0px;
 		z-index: -1;
-
 		background-color: var(--couleur-gris-transparent);
-
 		padding-bottom: 3250px
 		/*Détermine la hauteur de la zone semi-transparente sous la vidéo de la page d'accueil (overlay de toute la page) ... background*/
-
-
 	}
-
 	.sub-section-flex {
 	/*page nos champignons + boutique + */
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-
 	width: 33rem;
 	height: 45rem;
-
 	padding: 1px;
-
 	}
-
 	.sub-section-flex-producteur{
 	height: auto;
 	}
-
-
 	.section-landing-champignons {
 		position: absolute;
 		width: 100%;
 		top: 200px;
 		left: 0px;
 		z-index: -1;
-
 		background-color: var(--couleur-gris-transparent);
-
 		padding-bottom: 2950px
 			/*Détermine la hauteur de la zone semi-transparente sous la vidéo de la page d'accueil (overlay de toute la page) ... background*/
-
-
 	}
-
 	.grid-sub-section{
-
 	display: grid;
 	grid-template-columns: 22rem;
 	align-items: center;
@@ -1090,137 +800,88 @@ padding: 20px;
 	box-shadow: 0px 0px	20px #00000070;
 	padding: 20px;	
 	}
-
 	.grid-section{
 		grid-template-columns: 30rem 30rem;
 		grid-template-rows: 1fr;
 	}
-
 	.sub-section-flex-triple {
 	width: 35rem;
 	height: 40rem;
 	padding: 2px;
-
 	}
-
 	p{
 		font-size: 14px;
 		padding-top: 15px;
 		padding-bottom: 15px;
 	}
-
 	.image-xl {
 		width: auto;
 		height: 250px;
 	}
-
 	.image-big {
 		width: auto;
 		height: 350px;
 	}
-
 	.section-flex{
 		flex-direction: column;
 	}
-
 	.video-section {
 	height: 300px;
 	width: auto;
-
-
-
-
 	}
-
 	.image-banner {
 	width: 100%;
 	object-fit: cover;
 	max-width: 3000px;
 	position: relative;
 	top: -50px;
-
-
-
 	}
-
 	.section-flex-column-padding {
-		padding: 25px;
-		
+		padding: 25px;	
 	}
-
 .section-border-right {
 	border-right: 1px solid var(--couleur-blanc-bleu);
 }
-
 .section-border-left {
 	border-left: 1px solid var(--couleur-blanc-bleu);
-
 }
-
-
-
-
-
-}
-
-
-
-	@media screen and (max-width: 969px)
+}	@media screen and (max-width: 969px)
 	{
-
 	.video-background {
 	top: -150px;
 	left: -250px;
 	}
-
 	.grid-section{
 		grid-template-columns: 1fr;
 		grid-template-rows: 1fr 1fr;
 	}
-
-
 	.section-landing-champignons {
 		position: absolute;
 		width: 100%;
 		top: 200px;
 		left: 0px;
 		z-index: -1;
-
 		background-color: var(--couleur-gris-transparent);
-
 		padding-bottom: 5250px
 			/*Détermine la hauteur de la zone semi-transparente sous la bannière de la page champignon (overlay de toute la page) ... background*/
-
-
 	}
-
 	/*
 	.image-medium {
 		scale: 0.75;
 	}
-
 	.image-champignons{
 		scale: 0.75;
 	}
-
 	.image-big{
 		scale: 0.75;
-
 	}
-
 	p{
 		font-size: 14px;
 	}
 	*/
-
 	}
-
-
-
-
 @media screen and (max-width: 768px)
 {
-
 	.video-background {
 		object-fit: cover;
 		position: fixed;
@@ -1230,459 +891,315 @@ padding: 20px;
 		min-width: 100%;
 		min-height: 100%;
 		z-index: -3;
-
 		scale: 75%;
-
 	}
-
 	.video-landing {
 		height: auto;
 		width: 100%;
 		object-fit: fill;
-
 		position: relative;
 		top: 50px;
 	}
-
 	.video-background {
 	top: -50px;
 	left: -100x;
 	}
-	
-
-
 	.sub-section-flex-a-propos {
-
 	width: 19rem;
 	height: 15rem;
-
-
 	}
-
-
-
 	.title-landing {
 	position: absolute;
 	text-align: left;
 	font-size: 200%;
-
 	top: 80px;
-
 	}
-
 	.sub-title-landing {
 		margin-top: 75px;
 	}
-
 	.spacer-video2 {
 	/* espace pour la video de background (espace au bas de la page pour créer un espace vide) */
 	height: 625px;
 	}
-
 	.spacer-video {
 	/* espace pour le header video dans le landing (espace en haut de page entre les sections et la vidéo) */
 	height: 520px;
  	}
-
 	.spacer-banner {
 	/* espace pour la bannière de la page "Nos champignons" (espace au haut de la page qui pousse le contenu du site vers le bas) */
 	height: 500px;
 	}
-
 	.wrapper {
 	width: 95%;
 	padding: 10px;
 	max-width: 1800px;
 	margin-bottom: 10 auto;
 	height: auto;
-
 	position: relative;
-
 	}
-
 	.btn-nav {
 		font-size: 14px;
 		margin-top: 20.5px;
 		padding: 2.5px;
 		border-radius: 5px;
 	}
-
 	.btn-small-nav{
 		font-size: 70%;
 		margin: 0.5px;
 		padding: 5px;
 		border-radius: 5px;
 	}
-
 	h1{
 		font-size: 24px;
 	}
-
 	h2{
 		font-size: 20px;
 	}
-
 	.section-flex-column-padding {
 		display: flex;
 		flex-direction: column;
 		padding: 0px;
-		
 	}
-
 	.sub-section-flex {
 	/*page nos champignons + boutique + */
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-
 	width: 33rem;
 	height: 37rem;
-
 	padding: 1px;
-
 	}
-
 	.sub-section-flex-producteur{
 		height: auto;
 	}
-
 	.smaller-responsive{ /*garder smaller en dessous de sub-section-flex pour eviter que la hauteur ne s'ajuste pas.*/
 		height: 32rem;
 	}
-
-
-
 	.sub-section-flex-triple {
 	width: 27rem;
 	height: 36rem;
 	padding: 2px;
-
 	}
-
 	.flex-responsive-704{
 		flex-direction: column;
 		margin-top: 1px;
 	}
-
 	.flex-responsive-704 li{
 		margin-bottom: 15px;
 	}
-
 	.iframe{
 		width: 400px;
 		height: 350px;
 	}
-
 	header{
 		height: 200px;
 	}
-
-
 	.section-landing {
 	position: absolute;
 	width: 100%;
 	top: 150px;
 	left: 0px;
 	z-index: -1;
-
 	background-color: var(--couleur-gris-transparent);
-
 	padding-bottom: 2700px
 	/*Détermine la hauteur de la zone semi-transparente sous la vidéo de la page d'accueil (overlay de toute la page) ... background*/
-
-
 	}
-
-	
 	.section-landing-champignons {
 		position: absolute;
 		width: 100%;
 		top: 200px;
 		left: 0px;
 		z-index: -1;
-
 		background-color: var(--couleur-gris-transparent);
-
 		padding-bottom: 5100px
 			/*Détermine la hauteur de la zone semi-transparente sous la bannière de la page champignon (overlay de toute la page) ... background*/
-
-
 	}
-
 	footer p{
-
 		scale: 70%;
-
 	}
-
 	footer {
 	background-color: var(--couleur-bleu);
 	color: aliceblue;
 	margin-bottom: 15px;
-
 	border-radius: 45px;
 	}
-
 	/*Pour modifier le message du site (annonce site web en développement)  */
 	.responsive-margin{
 		margin-top: -12px;
 	}
-
 	header .red-border{
 		font-size: 80%;
 		padding: 5px;
 	}
-
 	table {
-
 	scale: 0.7;
-
-
 	}
-
 	.grid-responsive-704 ul{
 		display: grid;
 		grid-template-columns: 1fr;
 		grid-template-rows: 1fr 1fr 1fr;
 		gap: 15px;
-
-		
-
 	}
-
 	.grid-responsive {
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: 1fr;
 	justify-items: center;
-
 	}
-
 	.grid-sub-section{
-
 	display: grid;
-	
-
 	align-items: center;
 	justify-items: center;
-
 	box-shadow: 0px 0px	20px #00000070;
-
 	padding: 20px;
-	
-
 	}
-
 	.grid-section{
 		grid-template-columns: 20rem;
 		grid-template-rows: 1fr 1fr;
 	}
-
 	.image-xl {
 	width: auto;
 	height: 150px;
 	}
-
 	.image-big {
 		width: auto;
 		height: 250px;
 	}
-
 	.video-section {
 		height: 200px;
 		width: auto;
 		object-fit: cover;
 	}
-
 	.image-banner {
 	width: 100%;
 	object-fit: cover;
 	max-width: 3000px;
-
 	position: relative;
 	top: 0px;
 	}
-
 	.padding{
 	padding: 20px;
 	}
-
 	.padding-right{
 		padding-right: 25px;
 	}
-
 	.padding p{
 		padding: 15px;
 	}
 }
-
-
 @media screen and (max-width: 512px)
 {
-
 	.wrapper {
 	width: 100%;
 	padding: 1px;
 	max-width: 1800px;
 	margin-bottom: 10 auto;
 	height: auto;
-
 	position: relative;
-
 	}
-
 	.video-background {
 	top: -50px;
 	left: -1000px;
 	}
-
 	.sub-section-flex-triple {
 	width: 20rem;
 	height: 28rem;
 	padding: 2px;
-
 	}
-
 	/*Pour modifier le message du site (annonce site web en développement)  */
 	.responsive-margin{
 		margin-top: -5px;
 	}
-
-
 	.grid-sub-section{
 		display: grid;
 		grid-template-columns: 100vw;
 		grid-template-rows: 10% 20rem 40px 15%;
-
 		align-items: center;
 		justify-items: center;
-
 		box-shadow: 0px 0px	20px #00000070;
-
 		padding: 5px;
-
 	}
-
 	.sub-section-flex {
 		/*page nos champignons + boutique + ?*/
-
 		width: 20rem;
 		padding: 5px;
-
 		height: auto;
 	}
-
 	.sub-section-flex-producteur{
 		height: auto;
 	}
-
-
 	form{
 		width: 48%;
 	}
-
 	input[type=radio] {
 	margin: 2px;
 	}
-
 	.image-medium {
 		height: 200px;
 		width: auto;
 	}
-
 	.image-champignons{
 		height: 200px;
 		width: auto;
 	}
-
 	.image-big{
 		width: 200px;
 		height: auto;
-
 	}
-
 	.image-small{
 		width: 190px;
 		height: auto;
 	}
-
 	.spacer-video {
 	/* espace pour le header video dans le landing (espace en haut de page entre les sections et la vidéo) */
 	height: 365px;
 	}
-
 	.iframe{
 		width: 300px;
 		height: 250xp;
 	}
-
-	.btn{
+	.btn:not(#btn-plus,#btn-moins){
 		scale: 0.75;
 	}
-
 	.btn-not-available{
 		scale: 0.75;
 	}
-
 	.title-landing{
 		top: 45px;
 		font-size: 28px;
-
 		left: -20px;
-		
 	}
-
-
-
 	.section-landing {
 	position: absolute;
 	width: 100%;
 	top: 150px;
 	left: 0px;
 	z-index: -1;
-
 	background-color: var(--couleur-gris-transparent);
-
 	padding-bottom: 2450px
 	/*Détermine la hauteur de la zone semi-transparente sous la vidéo de la page d'accueil (overlay de toute la page) ... background*/
-
 	}
-
 	.section-landing-champignons {
 	position: absolute;
 	width: 100%;
 	top: 200px;
 	left: 0px;
 	z-index: -1;
-
 	background-color: var(--couleur-gris-transparent);
-
 	padding-bottom: 3750px
 		/*Détermine la hauteur de la zone semi-transparente sous la bannière de la page champignon (overlay de toute la page) ... background*/
-
-
 	}
-
-
 	h1{
 		scale: 0.75;
 	}
-
 	p{
 		font-size: 12px;
 		white-space: normal;
 		word-wrap: break-word;
 		overflow-wrap: break-word;
-
 		padding: 10px;
-
-		
 	}
-
 	input[type=radio] {
 	margin: 5px;
 	}
-
-
-
 }

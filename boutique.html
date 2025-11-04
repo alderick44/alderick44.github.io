@@ -2,8 +2,6 @@
 <html>
    <head>
 
-      <!-- Prévient un bug avec le responsive automatique avec l'outil inspecteur...-->
-      <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
 
       <link rel="icon" href="favicon.ico" type="image/x-icon">
       <link rel="stylesheet" href="style/style.css">
@@ -99,7 +97,7 @@
                <h1>Liste de prix</h1>
                <div class="section-flex">
 
-                  <!--
+               
                   <table id="Liste de prix">
                      <tr>
                         <th>Produits</th>
@@ -164,45 +162,83 @@
          </section>
          -->
 
-         <section class="wrapper over">
-            <!-- Tous nos produits section of the page-->
-            <div class="section-flex-column-padding">
-               <h1>Tous nos produits</h1>
-               <p class="padding">Nos produits bientôts disponibles pour l'ahat en ligne.</p>
-               <div class="section-flex">
-                  <div class="sub-section-flex-triple">
-                     <h1>Bloc de production</h1>
-                     <figure>
-                        <a href="boutique.html">
-                        <img src="media-files/images/produits/bloc-production-pleurote.jpg" class="image-small" alt="bloc de production champignon">
-                        </a>
-                     </figure>
-                     <p class="sub-section-flex-triple-texte">Placez le bloc dans un environement humide et frais.
-                        </p>
-                     <a class="btn" href="boutique.html">Acheter</a>
-                  </div>
-                  <div class="sub-section-flex-triple">
-                     <h1>Mycélium sur grain</h1>
-                     <figure>
-                        <a href="boutique.html">
-                        <img src="media-files/images/produits/gsl-col.jpg" class="image-small" alt="bloc de production champignon">
-                        </a>
-                     </figure>
-                     <p class="sub-section-flex-triple-texte">Le mycélium sur grain doit être mélangé à un substrat pour pouvoir produire des champignons.</p>
-                     <a class="btn" href="boutique.html">Acheter</a>
-                  </div>
-                  <div class="sub-section-flex-triple">
-                     <h1>Grain stérile</h1>
-                     <figure>
-                        <a href="boutique.html">
-                        <img src="media-files/images/produits/gspi-closeup.jpg" class="image-small" alt="bloc de production champignon">
-                        </a>
-                     </figure>
-                     <p class="sub-section-flex-triple-texte">Les sacs de grains stériles sont utilisés avec des seringues de cultures liquides. Vous pourrez innoculer vos propres cultures.</p>
-                     <a class="btn" href="boutique.html">Acheter</a>
+            <section class="wrapper over">
+               <!-- Tous nos produits section of the page-->
+               <div class="section-flex-column-padding">
+                  <h1>Tous nos produits</h1>
+                  <p class="padding">Nos produits bientôts disponibles pour l'ahat en ligne.</p>
+                  <div class="section-flex">
+                     <div class="sub-section-flex-triple">
+                        <h1>Bloc de production</h1>
+                        <figure>
+                           <a href="boutique.html">
+                           <img src="media-files/images/produits/bloc-production-pleurote.jpg" class="image-small" alt="bloc de production champignon">
+                           </a>
+                        </figure>
+                        <p class="sub-section-flex-triple-texte">Placez le bloc dans un environement humide et frais.
+                           </p>
+                        <a class="btn" href="boutique.html">Acheter</a>
+                        <!-- Java commentaires -->
+                        <div>
+                           <textarea id="commentaire" class="form-control" rows="4" placeholder="Ajoutez un commentaire..."></textarea>
+                           <button id="btn-ajouter-commentaire" class="btn btn-primary my-2 w-100">Ajouter un commentaire</button>
+                           <ul id="liste-commentaires" class="list-group my-4">
+                              
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="sub-section-flex-triple">
+                        <h1>Mycélium sur grain</h1>
+                        <figure>
+                           <a href="boutique.html">
+                           <img src="media-files/images/produits/gsl-col.jpg" class="image-small" alt="bloc de production champignon">
+                           </a>
+                        </figure>
+                        <p class="sub-section-flex-triple-texte">Le mycélium sur grain doit être mélangé à un substrat pour pouvoir produire des champignons.</p>
+                        <a class="btn" href="boutique.html">Acheter</a>
+                     </div>
+                     <div class="sub-section-flex-triple">
+                        <h1>Grain stérile</h1>
+                        <figure>
+                           <a href="boutique.html">
+                           <img src="media-files/images/produits/gspi-closeup.jpg" class="image-small" alt="bloc de production champignon">
+                           </a>
+                        </figure>
+                        <p class="sub-section-flex-triple-texte">Les sacs de grains stériles sont utilisés avec des seringues de cultures liquides. Vous pourrez innoculer vos propres cultures.</p>
+                        <a class="btn" href="boutique.html">Acheter</a>
+                     </div>
                   </div>
                </div>
-            </div>
+            </section>
+            <section class="wrapper over center center-gap">
+            <h1>Nouveau point de cueillette</h1>
+            <iframe
+               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5509.155974978947!2d-72.5747493603107!3d46.33807204726356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc7cf4c65339a6f%3A0x77ce72335e69326c!2sCulture%20Orenda%20-%20Oasis%20Urbaine!5e0!3m2!1sfr!2sca!4v1747000667418!5m2!1sfr!2sca"
+               class="iframe" style="border:0;" allowfullscreen="" loading="lazy"
+               referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <h2>Passez à Trois-Rivières</h2>
+            <p>Disponibles à Trois-Rivières chez Culture Orenda</p>
+            <address>
+               1014 Rue Albert Durand<br>
+               Trois-Rivières, QC G8Z 2M7
+            </address>
+            <p>
+               Mardi et Jeudi de 17h30 à 19h30<br>
+               Vendredi de 10h à 17h
+            </p>
+            <!-- <p>Prochaine exposition : <br>
+               <time datetime="2025-06-05T17:30">5 juin 2025 à 17h30</time>
+            </p> -->
+            <a class="btn padding" href="boutique.html">Réserver ma trousse</a>
+               <label for="quantity" class="form-label">Nombre de blocs</label>
+               <div class="input-group">
+                  <button type="button" id="btn-moins" class="btn">-</button>
+                  <input type="number" id="quantity" name="quantity" class="form-control" value="1" min="1" required>
+                  <button type="button" id="btn-plus" class="btn">+</button>
+               </div>
+            <h4>Total de la facture : <span id="total">0$</span></h4>
+            <h4 id="msg-discount" class="display-off">Vous êtes éligibles à une réduction du prix!</h4>
+            
          </section>
       </main>
       <footer>
@@ -211,5 +247,6 @@
             <p>Dans le cadre de l'AEC en design et intégration Web - Cégep de Trois-Rivières</p>
          </div>
       </footer>
+      <script src="index.js"></script>
    </body>
 </html>
