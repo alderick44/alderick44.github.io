@@ -46,16 +46,19 @@ footer {
 	box-shadow: 0px 0px	20px #52353570;
 	height: 85vh;
 	width: 100%;
+	background-color: var(--couleur-gris-bleu);
 }
-.flex-column{
+.f
+.card__title-image-text{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-
+	width: 100%;
+	height: 100%;
 }
 .px-3{
-	padding-left: 4vw;
-	padding-right: 4vw;
+	padding-left: 5vw;
+	padding-right: 5vw;
 }
 .carte__texte--padding{
 	margin-top: 15vh;
@@ -282,10 +285,6 @@ main {
 body {
 	background-color: var(--couleur-blanc-bleu);
 	
-}
-section {
-	background-color: var(--couleur-gris-bleu);
-	box-shadow: 0px 0px 5px rgb(0, 0, 0);
 }
 .section-flex { 
 	display: flex;
@@ -703,7 +702,7 @@ padding: 20px;
 	align-items: center;
 	justify-content: space-between;
 	box-shadow: 0px 0px	20px #52353570;
-	height: 65vw;
+	height: 100%;
 	width: 100%;
 	max-height: 125vh;
 	}
@@ -835,7 +834,7 @@ padding: 20px;
 	padding: 20px;	
 	}
 	.grid-section{
-		grid-template-columns: 30rem 30rem;
+		grid-template-columns: 1fr 1fr;
 		grid-template-rows: 1fr;
 	}
 	.sub-section-flex-triple {
@@ -869,6 +868,10 @@ padding: 20px;
 	max-width: 3000px;
 	position: relative;
 	top: -50px;
+	}
+	.px-3{
+		padding-left: 10vw;
+		padding-right: 10vw;
 	}
 	.section-flex-column-padding {
 		padding: 25px;	
@@ -905,7 +908,7 @@ padding: 20px;
 	align-items: center;
 	justify-content: space-between;
 	box-shadow: 0px 0px	20px #52353570;
-	height: 80vh;
+	height: 100%;
 	width: 100%;
 	}
 	/*
@@ -1054,7 +1057,7 @@ padding: 20px;
 		left: 0px;
 		z-index: -1;
 		background-color: var(--couleur-gris-transparent);
-		padding-bottom: 5100px
+		padding-bottom: 3900px
 			/*Détermine la hauteur de la zone semi-transparente sous la bannière de la page champignon (overlay de toute la page) ... background*/
 	}
 	footer p{
@@ -1083,8 +1086,8 @@ padding: 20px;
 	align-items: center;
 	justify-content: space-between;
 	box-shadow: 0px 0px	20px #52353570;
-	height: 80vh;
-	width: 100%;
+	height: 100%;
+	width: 90vw;
 	}
 	.grid-responsive-704 ul{
 		display: grid;
@@ -1106,7 +1109,7 @@ padding: 20px;
 	padding: 20px;
 	}
 	.grid-section{
-		grid-template-columns: 20rem;
+		grid-template-columns: 75vw;
 		grid-template-rows: 1fr 1fr;
 	}
 	.image-xl {
@@ -1143,9 +1146,11 @@ padding: 20px;
 {
 	.wrapper {
 	width: 100%;
-	padding: 1px;
+	padding: 0px;
 	max-width: 1800px;
-	margin-bottom: 10 auto;
+	margin-bottom: 10px;
+	margin-left: 0px;
+	margin-right: 0px;
 	height: auto;
 	position: relative;
 	}
@@ -1180,18 +1185,26 @@ padding: 20px;
 	.sub-section-flex-producteur{
 		height: auto;
 	}
+	.px-3{
+		padding-left: 25vw;
+		padding-right: 25vw;
+	}
 	form{
 		width: 48%;
+	}
+	.spacer-video2 {
+	/* espace pour la video de background (espace au bas de la page pour créer un espace vide) */
+	height: 425px;
 	}
 	input[type=radio] {
 	margin: 2px;
 	}
 	.image-medium {
-		height: 200px;
+		height: 150px;
 		width: auto;
 	}
 	.image-champignons{
-		height: 200px;
+		height: 150px;
 		width: auto;
 	}
 	.image-big{
@@ -1228,7 +1241,7 @@ padding: 20px;
 	left: 0px;
 	z-index: -1;
 	background-color: var(--couleur-gris-transparent);
-	padding-bottom: 2450px
+	padding-bottom: 2350px
 	/*Détermine la hauteur de la zone semi-transparente sous la vidéo de la page d'accueil (overlay de toute la page) ... background*/
 	}
 	.section-landing-champignons {
@@ -1238,7 +1251,7 @@ padding: 20px;
 	left: 0px;
 	z-index: -1;
 	background-color: var(--couleur-gris-transparent);
-	padding-bottom: 3750px
+	padding-bottom: 3100px
 		/*Détermine la hauteur de la zone semi-transparente sous la bannière de la page champignon (overlay de toute la page) ... background*/
 	}
 	h1{
@@ -1253,5 +1266,15 @@ padding: 20px;
 	}
 	input[type=radio] {
 	margin: 5px;
+	}
+	.card{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	box-shadow: 0px 0px	20px #52353570;
+	height: auto;
+	width: 100vw;
+
 	}
 }
