@@ -134,6 +134,9 @@ footer {
 	height: auto;
 	position: relative;
 }
+.background{
+	background-color: var(--couleur-gris-bleu);
+}
 p {
 	text-align: center;
 }
@@ -282,6 +285,7 @@ main {
 	margin-top: 225px;
 	margin-bottom: 150px;
 }
+
 body {
 	background-color: var(--couleur-blanc-bleu);
 	
